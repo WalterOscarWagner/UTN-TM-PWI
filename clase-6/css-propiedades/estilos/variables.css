@@ -1,5 +1,7 @@
-:root{
-    --primary-color: red
+/* Aca irian mis variables generales*/
 
+:root{
+    --primary-color: red;
+    --secondary-color: rgba(0, 0, 0, 0.164);
 
 }

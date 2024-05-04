@@ -4,3 +4,16 @@
 @import url('./font.css');
 
 
+div{
+    background-color: aquamarine;
+
+}
+
+span{
+    background-color: red;
+}
+
+button{
+    width: 200px;
+    height: 40px;
+}
