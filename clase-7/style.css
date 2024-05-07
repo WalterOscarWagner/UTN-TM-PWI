@@ -12,13 +12,18 @@
     width: 200px;
     height: 200px;
     background-color: red;
-    /*margin-top: 100px;
-    margin-left: 200px;*/
+    margin-top: 100px;
+    margin-left: 200px;
     border: 5px solid blueviolet;
     /*border-left: 5px solid green;*/
     /*padding: 5px;*/
     /*padding-left: 20px;*/
     padding: 15px 32px 28px 40px;
+    /*https://.cssmatic.com/es/box-shadow*/
+    box-shadow: 20px 40px 3px 0px  black,
+    inset 0px 0px 10px 5px white;
+    border-radius: 50px;
+
 }
 
 span{
@@ -32,6 +37,56 @@ span{
     padding-left: 20px;
     border: 5px solid greenyellow;
 }
+
+header{
+    background-color: gold;
+    padding: 32px;
+}
+
+header input{
+    width: 344px;
+    padding: 10px 15px;
+    background-color: white;
+    border: none;
+    font-size: 16px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.204);
+    border-radius: 2px;
+    border: 1px solid transparent;
+}
+
+header .buscador::placeholder{
+    color: #999999;
+}
+
+header input:focus-visible{
+    outline: none;
+    border: 1px solid blue;
+}
+header .buscador::placeholder{
+    color: ;
+}
+
+a{
+    color: black;
+    background-color: #999999;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 700px;
+}
+
+/* una transicion es un cambio de valores en un X tiempo*/
+
+a:hover{
+    background-color: aquamarine;
+    font-size: 20px;
+    transition:1s ease-in-out;
+}
+
+
 
 
 
