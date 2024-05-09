@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.padre{
+    display: flex;
+    flex-direction: row;
+    background-color: green;
+    justify-content: center;
+    align-items: center;
+    gap: 80px 40px;
+    /*column-gap: 40px;
+    row-gap: 80px;*/
+    flex-wrap: wrap;
+}
+
+.hijo{
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    background-color: rgb(222, 96, 96);
+    border: 1px solid black;
+    text-align: center;
+    padding: 20px;
+}
