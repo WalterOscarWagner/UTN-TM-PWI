@@ -1,60 +1,129 @@
+
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&family=Jersey+15+Charted&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://www.hostinger.com.ar/_ipx/f_webp/h-assets/client-stories/jhon-2x.png');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 @import url('https://www.hostinger.com.ar/_ipx/f_webp/h-assets/client-stories/ine-2x.png');
+@import url("https://www.hostinger.com.ar/_ipx/f_webp/h-assets/client-stories/alejandro-2x.png");
+
+
+:root{
+    --ff-main:"DM Sans", sans-serif;
+}
 
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family:  "DM Sans", sans-serif;
-    row-gap: 20px;
-
-
 }
 
-:root{
-    --primary-text-color: rgba(154, 216, 135, 0.93);
-    --secundary-text-color:#d2cce4;
-    --terciary-text-color:#8469d5;
-    --border-color: rgb(152, 152, 226);
+section .cards{
+    display:flex;
+    width: 100vw;
+    justify-content: center;
 }
 
-.padre-tarjetas a{
-    width: 200px;
-    height: 350px;
+
+.card{
+    margin: 20px;
+    display: flex;
+    width: 350px;
+    flex-direction: column;
+    border: 1px solid #673de646;
+    border-radius: 2%;
+    overflow: hidden;
+}
+
+.card .card-info{
+    height: 300px;
+    padding-top: 40px;
     display: flex;
     flex-direction: column;
-    background-color: rgb(220, 211, 211);
-    border-radius: 10px;
-    overflow: hidden;
+    padding: 40px 30px 40px 30px;
+    position: relative;
+    gap: 20px;
+
+}
+
+.card .card-info .info-stars i{
+    color: #673de6;
+    padding-left: 2px;
+    font-size: 30px;
+}
+
+.card .card-info .review-text{
+    font-family: var(--ff-main);
+    font-size: 14px;
+    color: #2f1c6a;
+
+}
+.card .card-info .history-text{
+    position: absolute;
+    bottom: 40px;
+}
+
+.card .card-info .history-text a{
+    font-family: var(--ff-main);
+    font-weight: 700;
+    color: #673de6;
+    text-decoration: none;
+
+}
+
+.user-info{
+    height: 110px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    border-top: 1px solid #673de646;
+    background-color: #f4f5ff;
     gap: 10px;
 
 }
 
-.padre-tarjetas .parte-1{
-    height: 280px;
-    width: 200px;
-    display: flexbox;
-    background-color:rgb(235, 222, 222);
-    border-width: 10px;
-    align-items: center;
-    justify-content: center;
-    padding-left: 10px;
+.user-info .user-pic img{
+    width: 65px;
 
 }
 
-.padre-tarjetas .parte-2{
-    height: 70px;
-    width: 1px;
-    display: flexbox;
-    background-color: #afa9c2;
-    align-items: center;
-    justify-content: center;
-    padding-left: 10px;
-
+.user-info .user-name{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 55px;
 }
+
+.user-info .user-name h2{
+    font-family: var(--ff-main);
+    font-size: 20px;
+}
+
+.user-info .user-name h3{
+    font-family: var(--ff-main);
+    font-weight: 250;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
