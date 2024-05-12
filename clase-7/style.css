@@ -1,4 +1,4 @@
-
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 /*normalize-normalizar*/
 *{
     box-sizing: border-box;
@@ -43,9 +43,29 @@ header{
     padding: 32px;
 }
 
-header input{
+.buscador-container{
     width: 344px;
-    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+
+.buscador-container button{
+    position: absolute;
+    right: 16px;
+    background-color: transparent;
+    border: none;
+    color: bisque;
+    border-left: 1px #6f6d6d solid;
+    padding-left: 10px;
+    height: 80%;
+
+}
+
+header input{
+    width: 100%;
+    padding: 10px 45px 10px 15px;
     background-color: white;
     border: none;
     font-size: 16px;
