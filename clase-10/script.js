@@ -140,11 +140,7 @@ null
 /*
 8 == NaN                      false
 5 == '5'                      true
-1 === Boolean('1')            false
-3 + '' === '3'
-
-
-
-
+1 === Boolean('1') boolean    false
+3 + '' === '3'     boolean    true
 
 */
