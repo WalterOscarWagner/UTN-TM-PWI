@@ -1,25 +1,15 @@
 /* Operadores logicos */
 
 /*
-! NOT => negacion ( devuelve el valor opuesto
-    booleano del dato)
+! NOT => negacion (devuelve el valor opuesto booleano del dato)
 
 || OR => o logico
-    Si el primer valor es un truly devuelve
-    el primer valor.Sino devuelve el segundo valor
 
 && AND => y logico
-    si el primer valor es un truly devuelve el
-    segundo valor.Sino devuelve el primero
-
 
 */
-
-
-console.log( !'' )
-
 /*
-falsy
+falsy:
 false
 0
 ''
@@ -29,63 +19,117 @@ NaN
 undefined
 */
 
+
 /*
-! (0 * null) // true
+!(0 * null) //true
 
-! ('' - 1) //false
+!('' - 1) //false
 
-!NaN // true
-
+!NaN //TRUE
 */
+
+
 let resultado = '' || 0
 console.log(resultado)
 
 
 /*
-Variables
+quiero dejar pasar a alguien que tenga mas de 18 años o tenga mas de 100000
 
-Sintaxis
+edad = 28
+dinero = 100
 
-<tipo_variable> identificador = dato
-*/ 
+condicion = edad > 18 || dinero > 100000
 
+condicion = true || false
 
-//VAR
-    //El valor por defecto es undefined
-    //tiene hoisting
-
-    //Declaracion
-    //inicializar la variable (implicito)
-var edad
-
-    //inicializar la variable(explicito)
-var nombre = 'pepe'
-
-    //Reasignacion
-edad = 90
-
-console.log(apellido)
-
-console.log(edad)
+condicion = true
 
 
-/* VAR
+edad = 10
+dinero = 1000000
 
-Tiene hoisting ? SI
-Tiene valor implicito en undefined ? SI
-Se puede reasignar ? SI
-Se puede redeclarar ? SI
+condicion = edad > 18 || dinero > 100000
+
+condicion = false || true
+
+condicion = true
+
+
+
+edad = 10
+dinero = 10
+
+condicion = edad > 18 || dinero > 100000
+
+condicion = false || false
+
+condicion = false (es el segundo false)
+
+
+si el usuario tiene nombre o email lo registro
+
+nombre = 'pepe'
+email = ''
+
+condicion = nombre || email
+
+condicion = 'pepe'
+
+nombre = ''
+
+email = 'pepe@gmail.com'
+
+condicion = nombre || email
+
+condicion = 'pepe@gmail.com'
+
+
+nombre = ''
+email = ''
+
+condicion = no,bre || email
+
+condicion = ''
+
+
+nombre_usuario = solicitarnombre() || 'unknown'
+
 */
 
 
-//LET
+/*
+si dejo pasar el usuario si tiene mas de 18 y mas de 6000
 
-//Declarando e inicializando mi variable de manera implicita
-let edad
+edad = 70
+dinero = 90000
+
+condicion = edad >= 18 && dinero > 6000
+
+                true && true
+
+                true
+
+edad = 10
+dinero = 90000
+
+condicion = edad >= 18 && dinero > 6000
+
+condicion = false
 
 
-//Declarando e inicilalizando mi variable de manera explicita
-let nombre = 'pepe'
+edad = 60
+dinero = 900
+
+condicion = edad > 18 && dinero > 6000
+
+condicion = dinero > 6000
+condicion = false
 
 
-console.log(edad)
+*/
+
+/*
+*/
+
+
