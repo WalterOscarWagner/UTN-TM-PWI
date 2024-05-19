@@ -29,8 +29,7 @@ undefined
 */
 
 
-let resultado = '' || 0
-console.log(resultado)
+
 
 
 /*
@@ -130,6 +129,76 @@ condicion = false
 */
 
 /*
+
+!(NaN == NaN) || 'pepe' = true
+
+'pepe' * 1 +'' && 0
+NaN + '' && 0
+'NaN' && 0
+
+
 */
+/*
+
+9 * '9' * null || 'pepe' && 'juan'
+
+81 * null || 'pepe' && 'juan'
+
+0 || 'pepe' 66 'juan'
+
+
+
+*/
+
+
+/*
+
+Variables
+<tipo variable> identificador = dato
+
+*/
+
+// VAR
+
+// El valor por defecto implicito es undefined
+//Tiene hoisting
+
+//Declaracion
+
+//Inicializar la variable(implicito)
+
+
+//Inicializar la variable (explicito)
+
+
+ //Re asignacion
+
+
+/*
+alert (nombre)
+*/
+
+
+
+/*
+let edad
+
+let nombre = 'pepe'
+
+
+nombre = 'juan'
+
+console.log(nombre)
+*/
+
+
+
+//CONST
+
+const nombre = 'pepe'
+
+console.log(nombre)
+
+
 
 
