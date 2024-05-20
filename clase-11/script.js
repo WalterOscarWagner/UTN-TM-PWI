@@ -223,8 +223,9 @@ if(edad > 16 && lenguaje_fav === 'js')
     {
         console.log('bienvenido')
     }
-else if(edad > 14 && lenguaje_fav == 'PHP') 
-{console.log( 'Bienvenido a frontend')}
+else if(edad > 14 && lenguaje_fav == 'PHP')
+    {console.log( 'Bienvenido a frontend')}
+
 else{
     console.log('no se puede')
 
