@@ -194,11 +194,38 @@ console.log(nombre)
 
 
 //CONST
-
+/*
 const nombre = 'pepe'
 
 console.log(nombre)
 
 
 
+*/
 
+/*
+Scope y block   (bloques y alcance)
+*/
+/*
+
+// crear un bloque de codigo
+{
+    var nombre = 'pepe'
+    console.log(nombre)
+}
+*/
+
+
+let edad = prompt('ingresa la edad')
+let lenguaje_fav = prompt('ingrese su lenguaje favorito')
+
+if(edad > 16 && lenguaje_fav === 'js')
+    {
+        console.log('bienvenido')
+    }
+else if(edad > 14 && lenguaje_fav == 'PHP') 
+{console.log( 'Bienvenido a frontend')}
+else{
+    console.log('no se puede')
+
+}
