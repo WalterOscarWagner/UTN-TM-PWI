@@ -33,50 +33,32 @@ if(calificacion >= 90 && calificacion <= 100)
     {
         console.log('A')
     }
-    else if(calificacion >= 80 && calificacion <= 89)
+    else if(calificacion >= 80 && calificacion < 90)
     {
         console.log('B')
     }
-    else if(calificacion >= 70 && calificacion <= 79)
+    else if(calificacion >= 70 && calificacion < 80)
     {
         console.log('C')
     }
-    else if(calificacion >= 60 && calificacion <= 69)
+    else if(calificacion >= 60 && calificacion < 70)
     {
         console.log('D')
     }
-    else if(calificacion >= 0 && calificacion <=59)
+    else if(calificacion >= 0 && calificacion < 60)
     {
         console.log('F')
     }
-    else if(calificacion > 100)
+    else 
     {
         console.log('Calificacion no valida')
     }
-    */
-
-
-
-/*
-let longitud_1= prompt('Ingresa primer longitud del triangulo')
-let longitud_2= prompt('Ingresa segunda longitud del triangulo')
-let longitud_3= prompt('Ingresa tercer longitud del triangulo')
-
-if(logitud_1 <= 0 && longitud_2 <= 0 && longitud_3 <= 0)
-    {
-        console.log('Longitudes no validas')
-    }
-    
-
-
-
-
-
-
-
-
 
 */
+
+
+
+
 
 
 /*
@@ -114,11 +96,11 @@ if( numero === '1')
     else{
         console.log('Numero no valido')
     }
+
 */
 
 
-
-
+/*
 let grados= prompt('Grados Celsius')
 
 if(grados <= 0)
@@ -137,11 +119,11 @@ if(grados <= 0)
     {
         console.log('Medida no valida')
     }
+*/
 
 
 
 
-/*
 let lado1 = prompt('imgrese medida lado 1')
 let lado2 = prompt('ingrese medida lado 2')
 let lado3 = prompt('ingrese medida lado 3')
@@ -161,4 +143,6 @@ if (lado1 <= 0 || lado2 <= 0 || lado3 <= 0)
     else{
         console.log('Escaleno')
     }
-*/
+
+
+
