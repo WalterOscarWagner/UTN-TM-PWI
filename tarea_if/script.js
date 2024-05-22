@@ -63,7 +63,7 @@ if(calificacion >= 90 && calificacion <= 100)
 
 /*
 
-let numero = prompt ('ingresa un numero del 1 al 7')
+let numero = Number(prompt('ingresa un numero del 1 al 7'))
 
 if( numero === '1')
     {
@@ -99,30 +99,30 @@ if( numero === '1')
 
 */
 
-
 /*
+
 let grados= prompt('Grados Celsius')
 
-if(grados <= 0)
+if(temperatura ==='' || temperatura === null || isNaN(temperatura))
     {
-        console.log('Solido')
+        console.log('ERROR: temperatura debe ser un dato numerico')
     }
-    else if(grados >= 1 && grados <= 99)
-    {
-        console.log('Liquido')
+else{
+    if(temperatura <= 0){
+        console.log(solido)
     }
-    else if (grados >= 100)
-    {
-        console.log('Gaseoso')
+    else if(temperatura >= 0 && temperatura <= 99){
+        console.log(liquido)
     }
-    else
-    {
-        console.log('Medida no valida')
+    else if(temperatura >= 100){
+        console.log(gaseoso)
     }
+    }
+    
 */
 
 
-
+/*
 
 let lado1 = prompt('imgrese medida lado 1')
 let lado2 = prompt('ingrese medida lado 2')
@@ -144,5 +144,5 @@ if (lado1 <= 0 || lado2 <= 0 || lado3 <= 0)
         console.log('Escaleno')
     }
 
-
+*/
 
