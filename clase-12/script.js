@@ -63,8 +63,8 @@ alert(sumaNumeros)
 */
 
 
-
 /*
+
 vamos a solicitar al usuario una cantidad de repeticiones
 vamos a solicitar un numero la cantidad de repeticiones ingresada por el usuario,al final mostrar el resultado de la suma
 validad que el numero ingresado sea un numero,en caso de no vollver a solicitarlo
@@ -86,7 +86,6 @@ for (let iteracion = 1; iteracion <= cantidadDeRepeticiones; iteracion = iteraci
     suma = suma + Number(numero)
 }
 alert("El resultado es" + suma)
-
 */
 
 /*
@@ -135,7 +134,7 @@ calcularIva(100)
 
 */
 
-
+/*
 function calcularIva(importe){
     return importe * 0.21
 }
@@ -145,7 +144,7 @@ let iva = calcularIva(100)
 alert(iva)
 console.log(iva)
 
-
+*/
 
 
 
