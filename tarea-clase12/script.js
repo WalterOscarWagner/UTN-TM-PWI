@@ -39,7 +39,7 @@ alert(restar (8,5))
 
 */
 
-
+/*
 function calcular(operacion,a,b){
     if(operacion === '+'){
         return Number(a + b)
@@ -52,13 +52,14 @@ function calcular(operacion,a,b){
 
 }
 
-
 alert(calcular('-',15,9))
 
+*/
 
 
-
-
+function contarHasta(numero){
+    return Number
+}
 
 
 
