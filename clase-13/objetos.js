@@ -139,7 +139,7 @@ El usuario ${user.name} ${user.lastname} tiene las preferencias en:
 tipo_factura 'A,'B','C'
 
 
-En el caso de so la factura es C o B el precio tendra el iva incluido
+En el caso de si la factura es C o B el precio tendra el iva incluido
 Ejemplo
 calcularIva(100, 'C'|'B')
 { 
@@ -166,7 +166,7 @@ calcularIva(100, 'A')
 }
 
 */
-
+/*
 
 const calcularIva = (precio, tipo_factura ) => {
     let iva = precio * 0.21
@@ -190,7 +190,9 @@ const calcularIva = (precio, tipo_factura ) => {
 
 
 console.log(calcularIva(1000,'A'))
+console.log(calcularIva(1000,'B'))
 
+*/
 
 
 
