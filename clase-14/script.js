@@ -117,11 +117,19 @@ const productos = [
         price: 6000,
         marca: 'noblex'
     },
-
+    {
+    title: 'celular samsung 64gb',
+    price: 4500,
+    marca: 'samsung'
+    },
+    {
+        title: 'celular samsung 128gb',
+        price: 4500,
+        marca: 'samsung'
+    },
 ]
 
-/* crear un array llamado samsung que contenga los productos que sean de la marca samsung */
-
+/* crear un array llamado samsung que contenga los productos que sean de la marca samsung 
 
 
 const samsung = []
@@ -132,34 +140,41 @@ for(const producto of productos){
 }
 console.log(samsung)
 
+*/
 
+/*
+Crear una funcion que se llame buscarProductos(string) recibira un string y cada producto del array
+de productos verificara si el titulo tiene incluido el string buscado
+Esta funcion debe retornar un array de prductos
 
+EJEMPLO:
+buscarProducto('noblex') //retorna:
+[
+    {
+        title: 'tv noblex 65" ',
+        price: 6000,
+        marca: 'noblex'
+    },
+    {
+        title: 'tv noblex 50" ',
+        price: 4500,
+        marca: 'noblex'
+    },
+]
+buscarProducto('celular´')
+[
+    {
+    title: 'celular samsung 64gb',
+    price: 4500,
+    marca: 'samsung'
+    },
+            title: 'celular samsung 128gb',
+        price: 4500,
+        marca: 'samsung'
+    },
+]
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+*/
 
 
 
