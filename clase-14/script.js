@@ -147,7 +147,7 @@ console.log(samsung)
 //Crear una funcion que se llame buscarProductos(string) recibira un string y cada producto del array de productos verificara si el titulo tiene incluido el string buscado Esta funcion debe retornar un array de prductos
 
 EJEMPLO:
-buscarProducto('noblex') //retorna:
+buscarProducto('noblex') 
 [
     {
         title: 'tv noblex 65" ',
@@ -180,10 +180,12 @@ buscarProducto('celular')
 function buscarProducto (busqueda){
     const arrayProductos = []
     for (const producto of productos){
-        if (producto.title.includes(busqueda)){
+        if (producto.title.toLowerCase.includes(busqueda.toLowerCase())){
             arrayProductos.push(producto)
         }
     }
     return arrayProductos;
 }
-console.log(buscarProducto ('samsung'))
+
+let stringBuscado = prompt('ingrese el producto que desea buscar')
+console.log(buscarProducto ('stringBuscado'))
