@@ -23,7 +23,7 @@ login() // retorna el usuario {
 }
     */
 
-
+/*
 const tieneMayuscula = (palabra) => palabra.toLowerCase() !== palabra
 
 const validacionEmail = (email) => {
@@ -61,9 +61,77 @@ const login = () => {
 
 
 console.log(login())
+*/
+
+/*
+
+## Calculadora de operaciones
+
+Crear una funcion que se llame calculadora() que de inicio a la sig logica
+-Operaciones disponibles:
+
+    1) +
+    2) -
+
+Solicitar una operacion y verificar que la operacion sea valida (es valida si esta dentro de las operaciones disponibles)
+Solicitar un numero 1 y validarlo
+Solicitar un numero 2 y validarlo
+
+Al finalizar las solicitudes mostrar el resultado por alerta de la sig manera:
+'El resultado de {numero1} {operacion} {numero2} es {resultado}'
+*/
 
 
 
+const validacionOperacion = (operacion) =>{
+    const OPERACIONES_DISPONIBLES = ['+','-']
+    for(let operacionDisponible of OPERACIONES_DISPONIBLES){
+        if(operacionDisponible === operacion){
+            return true
+        }
+    }
+    return false
+}
+
+const validacionNumero = (numero) =>{
+    return numero && !isNaN(numero)
+}
+
+const calculadora = () =>{
+    let operacion = prompt('Ingrese una operacion')
+    while(!validacionOperacion(operacion)){
+    operacion = prompt('Error,operacion no disponible,seleccione una operacion')
+    }
+
+    let a = prompt('Ingrese un primer numero')
+    while(!validacionNumero(a)){
+        a = prompt('Error numero no valido, ingrese nuevamente')
+    }
+
+    let b = prompt('Ingrese un segundo numero')
+    while(!validacionNumero(b)){
+        b = prompt('Error numero no valido, ingrese nuevamente')
+    }
+
+    let resultado = 0
+
+    if(operacion === '+'){
+        resultado = Number(a) + Number(b)
+    }
+    else if(operacion === '-'){
+        resultado = Number(a) - Number(b)
+    }
+
+    alert(`
+        El resultado de ${a} ${operacion} ${b} es ${resultado}
+        `)
+
+}
+
+
+
+
+calculadora()
 
 
 

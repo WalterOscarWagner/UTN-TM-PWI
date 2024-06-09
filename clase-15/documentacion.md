@@ -57,9 +57,20 @@ login() // retorna el usuario {
     password: 'Pepe123'
 }
 
+## Calculadora de operaciones
 
+Crear una funcion que se llame calculadora() que de inicio a la sig logica
+-Operaciones disponibles:
 
+    1) +
+    2) -
 
+Solicitar una operacion y verificar que la operacion sea valida (es valida si esta dentro de las operaciones disponibles)
+Solicitar un numero 1 y validarlo
+Solicitar un numero 2 y validarlo
+
+Al finalizar las solicitudes mostrar el resultado por alerta de la sig manera:
+'El resultado de {numero1} {operacion} {numero2} es {resultado}'
 
 
 
