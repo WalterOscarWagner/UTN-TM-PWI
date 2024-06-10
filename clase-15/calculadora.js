@@ -23,7 +23,7 @@ login() // retorna el usuario {
 }
     */
 
-/*
+
 const tieneMayuscula = (palabra) => palabra.toLowerCase() !== palabra
 
 const validacionEmail = (email) => {
@@ -58,7 +58,7 @@ const login = () => {
 
     return usuario
 }
-
+/*
 
 console.log(login())
 */
@@ -82,7 +82,7 @@ Al finalizar las solicitudes mostrar el resultado por alerta de la sig manera:
 */
 
 
-
+/*
 const validacionOperacion = (operacion) =>{
     const OPERACIONES_DISPONIBLES = ['+','-']
     for(let operacionDisponible of OPERACIONES_DISPONIBLES){
@@ -133,12 +133,14 @@ const calculadora = () =>{
 
 calculadora()
 
+*/
 
 
 
-
-
-
+localStorage.setItem( 
+    'usuario',
+    JSON.stringify(login())
+)
 
 
 
