@@ -65,7 +65,8 @@ Crear una funcion que se llame calculadora() que de inicio a la sig logica
     1) +
     2) -
 
-Solicitar una operacion y verificar que la operacion sea valida (es valida si esta dentro de las operaciones disponibles)
+Solicitar una operacion y verificar que la operacion sea valida (es valida si esta dentro de las 
+operaciones disponibles)
 Solicitar un numero 1 y validarlo
 Solicitar un numero 2 y validarlo
 
@@ -74,7 +75,23 @@ Al finalizar las solicitudes mostrar el resultado por alerta de la sig manera:
 
 
 
+## Historial
 
+-agregarAlHistorial
+-mostrarHistorial/renderizarHistorial
+
+
+ESTO NO ES FUNCION: Van a intentar obtener el historial del localStorage si nos devuelve null el getItem 
+deberemos guardar un array vacio en el localStorage
+
+Vamos a crear una funcion llamada obtener historial que nos devuelva el array historial
+Vamos a crear en nuestro programa la funcion guardarEnHistorial que reciba un objeto y
+lo guarde en el localStorage dentro del array historial
+
+EJEMPLO DE USO: 
+
+obtenerHistorial() => retornara un array historial [{},{}]
+guardarEnHistorial(objeto) => agrega al array guardado en localStorage el objeto recibido
 
 
 
