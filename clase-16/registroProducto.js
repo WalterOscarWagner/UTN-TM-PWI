@@ -75,7 +75,6 @@ console.log(DATOS_PRODUCTO)
 
 
 
-const registrarProducto = () => 
 
 
 
@@ -105,11 +104,8 @@ const registrarProducto = () =>
 
 
 
-const registrarProducto = () => {
 
 
-
-}
 
 
 
