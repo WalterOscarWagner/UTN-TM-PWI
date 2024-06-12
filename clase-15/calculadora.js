@@ -165,21 +165,93 @@ const guardarEnHistorial = (objeto) =>{
     localStorage.setItem('historial', JSON.stringify(historial))
 }
 
-guardarEnHistorial({nombre:'walter',password: 'abcde'})
 
 
+/*
+Cada elemento del historial tendra el siguiente formato
+{
+    accion: 'calculadora',
+    operacion: '+'||'-',
+    a: number,
+    b: number,
+    resultado: number,
+    fecha: dd/mm/aaaa || '18|01/2020'
+}
+
+Esto significa que cuando usemos guardarEnHistorial debemos guardar el objeto de la esa manera
 
 
+Vamos a crear una funcion llamada renderizarHistorial
+
+va a llamar al historial guardado y por cada elemento del historial vamos a crear la sig plantilla 
+`
+Accion: {accion}
+Operacion: {operacion}
+Numeros: {a}, {b}
+Resultado: {resultado}
+fecha: {fecha}
+`
+
+y la acumularan en un string y al finalizar el recorrido mostraran el string por alerta
 
 
+Para hacer el ejercicio recuerden previamente guardar algunas operaciones en el historial y borren las anteriores
+
+guardarEnElHistorial({
+    accion: 'calculadora',
+    operacion: '+',
+    a: 3,
+    b: 3,
+    resultado: 6,
+    fecha:  '18|01/2020'
+})
+*/
+/*
+guardarEnHistorial ({
+    accion: 'calculadora',
+    operacion: '+',
+    a: 2,
+    b: 6,
+    resultado: 8,
+    fecha: '17/03/2024'
+})
 
 
+guardarEnHistorial({
+    accion: 'calculadora',
+    operacion: '+',
+    a: 5,
+    b: 5,
+    resultado: 10,
+    fecha: '27/08/2024'
+})
 
+guardarEnHistorial({
+    accion: 'calculadora',
+    operacion: '+',
+    a: 10,
+    b: 6,
+    resultado: 16,
+    fecha: '31/05/2024'
+})
+*/
 
+const renderizarHistorial = () =>{
+    let listaHistorial = ''
+    const historial = obtenerHistorial()
+    for (const objeto of historial){
+        listaHistorial = listaHistorial + `
+        accion: ${objeto.accion}
+        operacion: ${objeto.operacion}
+        numeros: ${objeto.a}, ${objeto.b}
+        resultado: ${objeto.resultado}
+        fecha: ${objeto.fecha}
+        `
+    }
+    return listaHistorial
+}
 
-
-
-
+alert(renderizarHistorial())
 
 
 
