@@ -22,5 +22,4 @@ cajaProducto.innerHTML = `
     <h2>Soy un subtitulo</h2>
     <p>Tv muy linda</p>
     <span>Precio: <b>$500</b></span>
-    
     `
