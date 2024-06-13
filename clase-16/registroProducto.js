@@ -23,7 +23,6 @@ Si el usuario presiona aceptar o escribe 'SI' entonces la funcion creara un obje
 mostrara por consola
 
 */
-
 const categoriasDisponibles =['tecnologia', 'hogar', 'otros']
 const validarStringConMinimo = (valor, minimo) => valor && isNaN(valor) && valor.lenght >= minimo
 
@@ -33,8 +32,6 @@ const validarDescripcion = (valor) => validarStringConMinimo(valor, 10)
 const validarCategoria = (valor) => categoriasDisponibles.includes(valor)
 const validarMarca = (valor) => validarStringConMinimo(valor, 3)
 
-
-
 const crearObjetoConfeccion = (mensaje, error, validacion) =>{
     return {
         mensaje: mensaje,
@@ -42,7 +39,6 @@ const crearObjetoConfeccion = (mensaje, error, validacion) =>{
         validacion: validacion
     }
 }
-
 
 const DATOS_PRODUCTO = {
     TITULO: crearObjetoConfeccion(
@@ -69,9 +65,19 @@ const DATOS_PRODUCTO = {
         'Ingrese una marca min (3) caracteres',
         'Error al ingresar marca, ingrese nuevamente',
         validarMarca
-    )
+    ),
 }
-console.log(DATOS_PRODUCTO)
+
+
+const solicitarDato = (objetoDeConfeccion) => {
+    
+    let dato = prompt(objetoDeConfeccion.mensaje)
+    while(!objetoDeConfeccion.validacion(dato)){
+        dato = prompt(objetoDeConfeccion.error)
+    }
+    return dato
+}
+
 
 
 
