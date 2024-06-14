@@ -114,8 +114,8 @@ for(const producto of productos){
 productosHTML.innerHTML = plantillaProductos
 
 */
-
 /*
+*
 Renderizar un carrito:
 
 Un array de items llamado carrito
