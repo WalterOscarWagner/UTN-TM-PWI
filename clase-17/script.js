@@ -168,14 +168,18 @@ const carrito = [
 ]
 
 
-const carritoHTML = document.getElementById(carrito)
+const renderizarCarrito = (carrito) =>{
+    const carritoHTML = document.getElementById("carrito")
+    const totalHTML = document.getElementById('total')
 
-
-console.log(carrito)
-
-let plantillacarrito =''
-for(const carrito of carrito){
-
+    let plantillaCarrito = `
+    for(const item of carrito)
+    
+    
+    
+    
+    
+    `
 }
 
 
