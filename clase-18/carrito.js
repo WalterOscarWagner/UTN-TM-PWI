@@ -27,7 +27,7 @@ const carrito = [
         nombre:'tv samsung',
         id: 1,
         precio: 5000,
-        cantidad: 2,
+        cantidad: 1,
         thumbnail: ' https://m.media-amazon.com/images/I/61UUChLhLgL._AC_SL500_.jpg'
     },
     {
@@ -104,6 +104,9 @@ const eliminarObjetoPorId = (id) =>{
     if(objetoBuscado){
         if(objetoBuscado.cantidad === 1){
             //LOGICA PARA ELIMINAR ITEM
+            const posicionObjeto = carrito.findIndex((objeto) => objeto.id === id)
+            carrito.splice(posicionObjeto, 1)
+            
         }
         else{
             objetoBuscado.cantidad = objetoBuscado.cantidad - 1
@@ -120,7 +123,75 @@ const eliminarObjetoPorId = (id) =>{
 }
 
 
-eliminarObjetoPorId(1)
+eliminarObjetoPorId()
+
+
+
+/*
+Crear la funcion llamada agregarObjetoAlCarrito(objeto)
+Objeto es un objeto con 
+*/
+/*
+agregarObjetoAlCarrito ({
+    nombre: 'Toyota GR86',
+    id: 4,
+    precio: 25000,
+    thumnail:'https://www.google.com/imgres?q=toyota%20corolla&imgurl=https%3A%2F%2Fmedia.toyota.com.ar%2Fafed49ca-5392-4a01-82d6-0c74f9d2bbc7.png&imgrefurl=https%3A%2F%2Fwww.toyota.com.ar%2Fmodelos%2Fcorolla&docid=9q3wX3wFLTNWxM&tbnid=lOUViuIIVzo1XM&vet=12ahUKEwjekNyrreWGAxXzqpUCHQIgAUgQM3oECHsQAA..i&w=580&h=280&hcb=2&itg=1&ved=2ahUKEwjekNyrreWGAxXzqpUCHQIgAUgQM3oECHsQA'
+})
+*/
+/*
+Buscar si en el carrito ya existe un elemento con ese id
+Si existe unicamente incrementaran su cantidad en 1
+
+Si no existe van a agregarlo al carrito y van a crear una propiedad para ese objeto
+llamada cantidad y con el valor 1
+
+*/
+
+
+
+const agregarObjetoAlCarrito = (producto) => {
+    const objetoBuscado = carrito.find((objeto) => objeto.id === producto.id)
+    if(objetoBuscado){
+        /* Logica para incrementar la cantidad */
+        objetoBuscado.cantidad = objetoBuscado.cantidad + 1
+    }
+    else {
+        /* Logica para agregar el producto al carrito */
+        
+            producto.cantidad = 1
+            carrito.push(producto)
+        }
+        renderizarCarrito(carrito)
+
+    }
+
+
+
+    agregarObjetoAlCarrito ({
+        nombre: 'Toyota GR86',
+        id: 4,
+        precio: 25000,
+        thumnail: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWAApjDiM2t4OqVSjXoJWwNFl4k32NArjLSQ&s'
+
+    })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
