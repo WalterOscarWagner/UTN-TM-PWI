@@ -33,15 +33,16 @@ const contadorHTML = document.getElementById('contador')
 const btnIncrementarHTML = document.querySelector('.btn-incrementar')
 const btnDecrementarHTML = document.querySelector('.btn-decrementar')
 
+
 const renderizarContador = () =>{
     contadorHTML.innerText = estadoContador
 }
-const incrementarContador = () =>{
+const handleIncrementarContador = () =>{
     estadoContador = estadoContador + 1
     renderizarContador()
 }
 
-const decrementarContador = () =>{
+const handleDecrementarContador = () =>{
     estadoContador = estadoContador - 1
     renderizarContador()
 }
@@ -50,8 +51,31 @@ let estadoContador = 4
 renderizarContador()
 
 
-btnIncrementarHTML.addEventListener('click', incrementarContador)
-btnDecrementarHTML.addEventListener('click', decrementarContador)
+btnIncrementarHTML.addEventListener('click', handleIncrementarContador)
+btnDecrementarHTML.addEventListener('click', handleDecrementarContador)
+
+
+const formLoginHTML = document.getElementById('form-login')
+
+
+
+
+const handleLogin = ( evento ) =>{
+    /* Prevenimos que se racarge la pagina al enviarse el formulario*/
+    evento.preventDefault()
+    console.log('formulario enviado')
+    console.dir(formLoginHTML.username.value)
+    console.dir(formLoginHTML.password.value)
+}
+
+
+formLoginHTML.addEventListener('submit', handleLogin)
+
+
+
+
+
+
 
 
 
