@@ -24,7 +24,14 @@ Debemos crear el numero mediante JS
 Habra un boton <button> + </button>
 Cuando ese boton sea clickeado el numero debera incrementarse en 1
 
+Crear el boton de decrementar
+
+(Opcional) que no se pueda decrementar a - de 1
 */
+
+const contadorHTML = document.getElementById('contador')
+const btnIncrementarHTML = document.querySelector('.btn-incrementar')
+const btnDecrementarHTML = document.querySelector('.btn-decrementar')
 
 const renderizarContador = () =>{
     contadorHTML.innerText = estadoContador
@@ -34,18 +41,17 @@ const incrementarContador = () =>{
     renderizarContador()
 }
 
-const contadorHTML = document.getElementById('contador')
-const btnIncrementarHTML = document.querySelector('.btn-incrementar')
+const decrementarContador = () =>{
+    estadoContador = estadoContador - 1
+    renderizarContador()
+}
 
-
-let estadoContador = 1
+let estadoContador = 4
 renderizarContador()
 
 
 btnIncrementarHTML.addEventListener('click', incrementarContador)
-
-
-
+btnDecrementarHTML.addEventListener('click', decrementarContador)
 
 
 
