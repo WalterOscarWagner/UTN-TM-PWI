@@ -191,15 +191,11 @@ nombre = 'juan'
 console.log(nombre)
 */
 
-
-
 //CONST
 /*
 const nombre = 'pepe'
 
 console.log(nombre)
-
-
 
 */
 
@@ -215,6 +211,12 @@ Scope y block   (bloques y alcance)
 }
 */
 
+/* Solicitar al usuario una edad y un lenguaje favorito
+
+Si su edad es mayor a 16 y su lenguaje favorito es 'js'
+mostrar por consola 'Bienvenido al desarrollo web frontend'
+mostrar por consola 'No se puede ser perfecto en todo'
+*/
 
 let edad = prompt('ingresa la edad')
 let lenguaje_fav = prompt('ingrese su lenguaje favorito')
@@ -223,10 +225,61 @@ if(edad > 16 && lenguaje_fav === 'js')
     {
         console.log('bienvenido')
     }
-else if(edad > 14 && lenguaje_fav == 'PHP')
+else if(edad > 14 && lenguaje_fav === 'PHP')
     {console.log( 'Bienvenido a frontend')}
 
 else{
     console.log('no se puede')
 
 }
+
+
+
+/*
+let email = prompt('ingrese su email')
+console.log(email)
+if(email){
+    console.log('correcto')
+}
+else{
+    console.log('error')
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
