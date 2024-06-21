@@ -1,33 +1,42 @@
+
 /* WHILE ,
 el bucle while repite un bloque de codigo mientras se cumpla x condicion
 
-
 */
 
+/* VALIDAR UN NUMERO 
 
-/*
+let numero = prompt('Ingrese un numero')
+
+while(!numero || isNaN(numero)){
+    alert('no ingresaste un numero')
+    numero = prompt('Ingresa nuevamente un numero')
+}
+*/
+
+/* 
+Solicitar un string al usuario y validar que sea un string valido
 
 let nombre = prompt('ingrese su nombre')
 
-
 while(!nombre || !isNaN(nombre)){
     alert('error de dato')
-    nombre = prompt ('ingrese su nombre')
+    nombre = prompt ('ingrese su nombre nuevamente')
 }
 */
 
 
 //FOR
+
 /* Es un bucle que usamos cuando queremos repetir un bloque
 de codigo una determinada cantidad de veces
-
-
-
-
 */
 /*
+console.log('Hola mundo')
 
-for(let iterador = 1; iterador <= 5; iterador = iterador + 1){
+
+//      inicio       ;    limite   ;    ritmo de actualizacion
+for(let iterador = 1; iterador <= 15; iterador = iterador + 1){
     console.log('hola mundo' + iterador)
 }
 */
@@ -38,15 +47,16 @@ for(let iterador = 1; iterador <= 5; iterador = iterador + 1){
 
 /*
 //Solicitar 1 nombre y mostrarlo por alerta 3 veces
-
-
-
-
-for(let i = 1; i <= 3; i = i +1){
-    let nombre = prompt('Ingrese un nombre:')
-    alert(nombre)
-}
 */
+
+
+
+for(let iterador = 1; iterador <= 3; iterador = iterador + 1){
+    let nombre = prompt('Ingrese un nombre:');
+    alert(nombre)
+    console.log(nombre + iterador)
+}
+
 
 /*
 let listaDeNumeros = 0

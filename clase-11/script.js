@@ -399,7 +399,6 @@ Líquido: entre 0 y 99 grados Celsius.
 Gaseoso: 100 grados Celsius o más.
 Si la temperatura introducida no es un número válido, el programa debe mostrar 
 "Temperatura no válida."
-*/
 
 
 let temperatura = prompt('Introduzca una temperatura en grados Celsius: ')
@@ -417,7 +416,7 @@ if (isNaN(temperatura)) {
         console.log('El estado del agua es Gaseoso')
     }
 
-
+*/
 
 
 
