@@ -47,16 +47,15 @@ for(let iterador = 1; iterador <= 15; iterador = iterador + 1){
 
 /*
 //Solicitar 1 nombre y mostrarlo por alerta 3 veces
-*/
+
 
 
 
 for(let iterador = 1; iterador <= 3; iterador = iterador + 1){
     let nombre = prompt('Ingrese un nombre:');
     alert(nombre)
-    console.log(nombre + iterador)
 }
-
+*/
 
 /*
 let listaDeNumeros = 0
