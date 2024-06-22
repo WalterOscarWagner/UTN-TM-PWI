@@ -72,10 +72,54 @@ alert(sumaNumeros)
 */
 
 
+/* solicitar 3 nombres y al final mostrarlos en lista
+Lista de nombres
+-pepe
+-juan
+-ezequiel
+
+
+let listaDeNombres ='Lista de nombres:'
+
+for(let iterador = 1; iterador <= 3; iterador = iterador + 1){
+    let nombre = prompt('Ingrese un nombre')
+        listaDeNombres = listaDeNombres +'\n'+ nombre
+}
+
+alert(listaDeNombres)
+
+*/
+
+/*
+Vamos a solicitar un numero 3 veces al finalizar mostrar el resultado de la sumatoria entre los numeros
+
+EJ:
+3
+3
+2
+Resultado: 8
+
+
+let listaDeNumeros = 'Lista de numeros'
+let sumaNumeros = 0
+
+for(let i = 1; i <= 3; i = i + 1){
+    let numero = Number (prompt('Escribir un numero'))
+    listaDeNumeros = listaDeNumeros + '\n' + numero
+    sumaNumeros = sumaNumeros + numero
+}
+
+alert(listaDeNumeros)
+alert(sumaNumeros)
+
+*/
+
+
 /*
 
 vamos a solicitar al usuario una cantidad de repeticiones
-vamos a solicitar un numero la cantidad de repeticiones ingresada por el usuario,al final mostrar el resultado de la suma
+vamos a solicitar un numero la cantidad de repeticiones ingresada por el usuario,al final mostrar
+el resultado de la suma
 validad que el numero ingresado sea un numero,en caso de no vollver a solicitarlo
 validar que la cantidad de repeticiones ingresada sea un numero, en caso que no volver a solicitarlo
 
@@ -86,7 +130,7 @@ while (!cantidadDeRepeticiones || isNaN(cantidadDeRepeticiones)) {
     alert("Dato no valido")
     cantidadDeRepeticiones = prompt("Ingrese un dato numerico")
 }
-for (let iteracion = 1; iteracion <= cantidadDeRepeticiones; iteracion = iteracion + 1) {
+for (let i = 1; i <= cantidadDeRepeticiones; i = i + 1) {
     numero = prompt("Ingrese un numero")
     while (!numero || isNaN(numero)) {
         alert("Dato no valido")
@@ -94,20 +138,24 @@ for (let iteracion = 1; iteracion <= cantidadDeRepeticiones; iteracion = iteraci
     }
     suma = suma + Number(numero)
 }
-alert("El resultado es" + suma)
+alert(" El resultado es: " + suma)
 */
 
-/*
+
+
+
 // FUNCIONES
 
+/*
 //Declarar una funcion
 function saludar(nombre){
-    alert('hola a' + nombre)
+    alert(' hola a ' + nombre)
 }
 
 
 //Invocar mi funcion
-saludar('pepe')
+
+saludar('pedro')
 saludar('juan')
 
 */
@@ -116,7 +164,8 @@ saludar('juan')
 /*
 
 
-//Crear una funcion llamada sumar,que reciba dos numeros y muestre por consola el resultado de la suma
+//Crear una funcion llamada sumar,que reciba dos numeros y muestre por consola el resultado de
+la suma de ambos numeros
 
 function sumar(numero1, numero2){
     let suma = numero1 +numero2
@@ -125,21 +174,23 @@ function sumar(numero1, numero2){
 }
 
 sumar(5,6)
-
 */
+
+
 /*
 
-Crear una funcion llamada calcularIva que reciba un precio y muestr el iva por consola de dicho precio
+Crear una funcion llamada calcularIva que reciba un precio y muestre el iva por consola de dicho precio
 
 valor * 0.21
 
 ej: calcularIva(100) => console: 21
 
+
 function calcularIva(importe){
     console.log(importe*0.21)
 }
 
-calcularIva(100)
+calcularIva(250)
 
 */
 
@@ -151,11 +202,34 @@ function calcularIva(importe){
 let iva = calcularIva(100)
 
 alert(iva)
-console.log(iva)
 
 */
 
+/*
+vamos a solicitar al usuario una cantidad de repeticiones
+vamos a solicitar un numero la cantidad de repeticiones ingresada por el usuario,al final mostrar
+el resultado de la suma
+validad que el numero ingresado sea un numero,en caso de no vollver a solicitarlo
+validar que la cantidad de repeticiones ingresada sea un numero, en caso que no volver a solicitarlo
+*/
 
+function solicitarYValidarNumero (){
+    let numero = prompt('ingrese un numero')
+    while (!numero || isNaN(numero)) {
+        alert ('El dato debe ser un numero')
+        numero = prompt('Ingrese un numero')
+    }
+    return Number(numero)
+}
+
+let cantidadDeRepeticiones = solicitarYValidarNumero()
+let suma = 0
+
+for (let i = 1; i <= cantidadDeRepeticiones; i = i + 1) {
+    let numero = solicitarYValidarNumero()
+    suma = suma + numero
+}
+alert(" El resultado es: " + suma)
 
 
 
