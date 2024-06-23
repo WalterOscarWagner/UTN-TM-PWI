@@ -1,26 +1,27 @@
 
 /* TIPOS DE DATOS OBJETOS */
+
 /*
 let edadUsuario = 19
+
 let nombreUsuario = 'pepe'
+
 let apellidoUsuario = 'suarez'
 
-*/
 
 //Formato key-value
-
+*/
 /*
 let usuario = {
     'edad': 19,
     'nombre': 'pepe',
     'apellido': 'suarez',
-    'mejor amigo':{
-        "nombre": 'juan'
+    'mejor amigo': {
+        'nombre': 'juan'
+    }
     }
 
-}
-
-console.log('hola' + usuario ['mejor amigo']['nombre'])
+console.log('hola ' + usuario['mejor amigo']['nombre'])
 
 */
 
@@ -33,22 +34,26 @@ nombre : string
 marca : string
 id : number
 desripcion : string
-*/
-/*
+
+
 let producto ={
     precioUnitario: 50000,
-    nombre_completo: 'Zapatillas',
+    nombreCompleto: 'Zapatillas',
     marca : 'Nike',
     id : 10,
     descripcion: 'Nuevas'
 }
 
 
-console.log('el producto' + producto['nombre_completo'] + 'cuesta $' + producto['precioUnitario'])
-
+console.log('vendo '+ producto['nombreCompleto '] )
 */
+
+
+
+
 /* 
-'El usuario {name} {lastname} creo su cuenta en fecha {created_at} vive en {adress} y su telefono es {tel}'
+'El usuario {name} {lastname} creo su cuenta en fecha {created_at} vive en {adress}
+y su telefono es {tel}'
 */
 /*
 Por consola mostrar un informe del usuario
@@ -57,24 +62,65 @@ de usuario en : {theme}\nLenguaje: {lang}'
 
 
 console.log('El usuario :' + user['name'] +'' + user['lastname']
-+ 'tiene las preferencias en :' + '\n' + user['user preferences']['theme']+ '\n' + user['user preferences']['lang'])
++ 'tiene las preferencias en :' + '\n' + user['user preferences']['theme']+
+'\n' + user['user preferences']['lang'])
 
 */
 /*
 const user = {
-    name:' pepe ',
-    lastname: ' suarez ',
+    name:'pepe',
+    lastname: 'suarez',
     'user preferences':{
-        theme: ' dark-mode ',
-        lang: ' spanish '
+        theme: 'dark-mode',
+        lang: 'spanish'
     },
     'user info':{
-        'created_at': ' 18/9/2005 ',
-        'adress': ' av siempre viva 742 ',
-        tel: ' 22 1323-2122 '
+        'created_at': '18/9/2005',
+        'adress': 'av siempre viva 742',
+        tel: '22 1323-2122'
     }
 }
 */
+
+
+const usuario = {
+    nombre: 'pepe',
+    apellido: 'suarez',
+    preferencias:{
+        tema: '-dark-mode',
+        lenguaje: '-español'
+    }
+
+}
+
+console.log('El usuario:' + usuario['nombre'] +' ' + usuario['apellido'] + ' ' + 'tiene las preferencias en:' + 
+    `\n` + usuario['preferencias']['tema'] + `\n` + usuario['preferencias']['lenguaje'])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* reasignamos el valor de la propiedad name
 
 user['name']  = 'juan'
@@ -91,7 +137,8 @@ user.isAdmin = true
 
 /*
 console.log('El usuario :' + user['name'] +'' + user['lastname'] +' creo su cuenta en fecha'
-+ user['user info']['created_at'] + 'vive en' + user['user info']['adress'] + 'y su telefono es'
++ user['user info']['created_at'] + 'vive en' + user['user info']['adress'] + 'y su
+telefono es'
 + user['user info']['tel'])
 */
 
