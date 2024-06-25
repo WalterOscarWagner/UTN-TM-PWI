@@ -82,43 +82,52 @@ const user = {
 }
 */
 
-
-const usuario = {
-    nombre: 'pepe',
-    apellido: 'suarez',
-    preferencias:{
-        tema: '-dark-mode',
-        lenguaje: '-español'
+/*
+const user = {
+    name: 'pepe',
+    lastname: 'suarez',
+    'user preferences':{
+        theme: '-dark-mode',
+        lang: '-español'
+    },
+    'user-info':{
+    'created_at': '18/02/2005',
+    'adress': 'av siempre viva 472',
+    tel: '+22 1323-2122'
+    }
     }
 
-}
 
-console.log('El usuario:' + usuario['nombre'] +' ' + usuario['apellido'] + ' ' + 'tiene las preferencias en:' + 
+    console.log(`
+        El usuario ${user.name} ${user.lastname} tiene las preferencias en:
+        -Modo: ${user['user preferences'].theme}
+        -Lenguaje: ${user['user preferences'].lang}
+        `)
+
+*/
+
+
+/*
+    console.log('El usuario :' user [name+' ' + user[' lastname'] +'creo su cuenta en fecha'
+        + user['user-info'][' created_at'] + 'vive en' + user[ 'user-info']['adress'] + ' y su telefono es'
+        + user['user-info']['tel'])
+*/
+
+
+/*
+    console.log(`
+        El usuario ${user['name']} ${user['lastname']} creo su cuenta en fecha
+        ${user ['user info'] ['created_at']}
+        vive en ${user['user info'] ['adress']}
+        y su telefono es ${user['user info']['tel']}
+        `)
+*/
+
+/*
+console.log('El usuario:' + usuario['nombre'] +' ' + usuario['apellido'] + ' ' +
+    'tiene las preferencias en:' + 
     `\n` + usuario['preferencias']['tema'] + `\n` + usuario['preferencias']['lenguaje'])
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+*/
 
 
 /* reasignamos el valor de la propiedad name
@@ -132,16 +141,15 @@ user['isAdmin'] = false
 user.isAdmin = true
 */
 
-//NOusamos notacion de . si la prpiedad tiene -,ñ,letras con tilde o espacios
-
+//NO usamos notacion de . si la prpiedad tiene -,ñ,letras con tilde o espacios
 
 /*
-console.log('El usuario :' + user['name'] +'' + user['lastname'] +' creo su cuenta en fecha'
-+ user['user info']['created_at'] + 'vive en' + user['user info']['adress'] + 'y su
-telefono es'
-+ user['user info']['tel'])
-*/
 
+console.log('El usuario :' + user['name'] +'' + user['lastname'] +' creo su cuenta en fecha'
++ user['user info']['created_at'] + 'vive en' + user['user info']['adress'] + 'y su telefono es'
++ user['user info']['tel'])
+
+*/
 
 
 // TEMPLADE STREAM
@@ -156,12 +164,7 @@ console.log(`
 /* PASAR LOS MENSAJES DE CONSOLA A TEMPLATE STRING*/
 
 /*
-console.log(`
-El usuario ${user['name']} ${user['lastname']} creo su cuenta en fecha
-${user ['user info']['created_at']}
-vive en ${user['user info'] ['adress']}
-y su telefono es ${user['user info']['tel']}
-`)
+
 */
 //Esto se puede abreviar usando .
 
@@ -171,8 +174,8 @@ console.log(`
     -Modo: ${user['user preferences']['theme']}
     -Lenguaje: ${user['user preferences']['lang']}
 `)
-
-
+*/
+/*
 console.log(`
 El usuario ${user.name} ${user.lastname} tiene las preferencias en:
 -Modo: ${user['user preferences'].theme}
@@ -182,9 +185,23 @@ El usuario ${user.name} ${user.lastname} tiene las preferencias en:
 */
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Crear una funcion llamada calcularIva(precio,tipo_factura)
 tipo_factura 'A,'B','C'
-
 
 En el caso de si la factura es C o B el precio tendra el iva incluido
 Ejemplo
@@ -211,9 +228,7 @@ calcularIva(100, 'A')
     precioConIva,
     factura
 }
-
 */
-/*
 
 const calcularIva = (precio, tipo_factura ) => {
     let iva = precio * 0.21
@@ -233,13 +248,10 @@ const calcularIva = (precio, tipo_factura ) => {
     return resultado
 }
 
-
-
-
-console.log(calcularIva(1000,'A'))
+console.log(calcularIva(1000, 'A'))
 console.log(calcularIva(1000,'B'))
 
-*/
+
 
 
 
