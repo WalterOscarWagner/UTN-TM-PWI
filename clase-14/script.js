@@ -80,6 +80,17 @@ console.log('la posicion de ezequiel es' + posicionDeEzequiel)
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 /*
 nombres2.splice(posicionDeEzequiel,1)
 console.log(nombres2)
