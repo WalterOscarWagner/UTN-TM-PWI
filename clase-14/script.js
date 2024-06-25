@@ -2,30 +2,103 @@
 
 /*
 
-const nombres3 = [ 'maria' , 'pedro' , 'leonel' , 'ezequiel' , 'elias' , 'lucas' , 'julieta' , 'abril' , 'lautaro']
+const nombres = [ 'maria' , 'pedro' , 'leonel' , 'ezequiel' , 'elias' , 'lucas' ,
+                    'julieta' , 'abril' , 'lautaro']
+
+
+console.log(nombres[1])
+console.log('tengo' + nombres.length + 'nombres')
 */
 
+// Metodos de arrays
 
+// .push()
+
+/*
+nombres.push('walter')
+
+console.log(nombres)
+
+*/
+/*
+let nombre = 'pepe'
+nombre = nombre.toUpperCase()
+
+console.log(nombre)
+
+*/
+
+// pop
 
 //Eliminar a leonel
 //eliminar al anterior a lucas
 //agregar antes de abril a 'sofia' sin eliminar a abril
 
 
+
+
+const nombres2 = ['maria','pedro','leonel','ezequiel','elias']
+
+
+
+
+let posicionDeEzequiel = nombres2.indexOf('ezequiel')
+
+console.log('la posicion de ezequiel es' + posicionDeEzequiel)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
-
-let leonelPosition = nombres3.indexOf('leonel')
-nombres3.splice(leonelPosition,1)
-console.log(nombres3)
+nombres2.splice(posicionDeEzequiel,1)
+console.log(nombres2)
 
 
-let lucasPosition = nombres3.indexOf('lucas')
-nombres3.splice((lucasPosition -1),1)
+
+
+
+
+
+
+
+let posicionDeLucas = nombres.indexOf('lucas')
+nombres2.splice((posicionDeLucas -1),1)
 console.log(nombres3)
 
 
 let abrilPosition = nombres3.indexOf('abril')
-nombres3.splice(abrilPosition,0 , 'sofia')
+nombres3.splice(abr,0 , 'sofia')
 console.log(nombres3)
 
 */
@@ -90,7 +163,7 @@ console.log(mayusculas);
 
 */
 
-
+/*
 const productos = [
     {
         title: 'tv samsung 32"',
@@ -129,7 +202,7 @@ const productos = [
     },
 ]
 
-
+*/
 /* crear un array llamado samsung que contenga los productos que sean de la marca samsung 
 
 
@@ -145,7 +218,7 @@ console.log(samsung)
 
 
 //Crear una funcion que se llame buscarProductos(string) recibira un string y cada producto del array de productos verificara si el titulo tiene incluido el string buscado Esta funcion debe retornar un array de prductos
-
+/*
 EJEMPLO:
 buscarProducto('noblex') 
 [
@@ -174,9 +247,9 @@ buscarProducto('celular')
     }
 ]
 
+*/
 
-
-
+/*
 function buscarProducto (busqueda){
     const arrayProductos = []
     for (const producto of productos){
@@ -188,4 +261,4 @@ function buscarProducto (busqueda){
 }
 
 let stringBuscado = prompt('ingrese el producto que desea buscar')
-console.log(buscarProducto ('stringBuscado'))
+console.log(buscarProducto ('stringBuscado'))*/
