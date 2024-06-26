@@ -35,7 +35,7 @@ console.log(nombre)
 //agregar antes de abril a 'sofia' sin eliminar a abril
 
 
-
+/*
 
 const nombres2 = ['maria','pedro','leonel','ezequiel','elias']
 
@@ -46,62 +46,11 @@ let posicionDeEzequiel = nombres2.indexOf('ezequiel')
 
 console.log('la posicion de ezequiel es' + posicionDeEzequiel)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+*/
 
 /*
 nombres2.splice(posicionDeEzequiel,1)
 console.log(nombres2)
-
-
-
-
-
-
-
-
 
 let posicionDeLucas = nombres.indexOf('lucas')
 nombres2.splice((posicionDeLucas -1),1)
@@ -119,12 +68,44 @@ for(let index = 0; index < nombres3.length; index =index + 1){
 }
 */
 
-/*
+
+
+// Eliminar a Leonel
+// Eliminar a el  anterior a lucas
+// Agregar antes de abril a 'sofia' sin eliminar a abril
+
 const nombres3 = [ 'maria' , 'pedro' , 'leonel' , 'ezequiel' , 'elias' , 'lucas'
 , 'julieta' , 'abril' , 'lautaro']
 
-*/
 
+console.log(nombres3)
+
+
+let posicionDeLeonel = nombres3.indexOf('leonel')
+nombres3.splice(posicionDeLeonel,1)
+
+let posicionDeLucas = nombres3.indexOf('lucas')
+nombres3.splice((posicionDeLucas -1),1)
+
+let posicionDeAbril = nombres3.indexOf('abril')
+nombres3.splice(posicionDeAbril,0,'sofia')
+
+console.log(nombres3)
+
+
+
+
+
+
+
+
+/*
+let abrilPosition = nombres3.indexOf('abril')
+nombres3.splice(abril,0 , 'sofia')
+
+console.log(nombres3)
+
+*/
 /*
 Obtener cantidad total de caracteres de una lista de nombres:
 Quiero que dado el array de nombre, por cada nombre sumes la cantidad de caracteres 
