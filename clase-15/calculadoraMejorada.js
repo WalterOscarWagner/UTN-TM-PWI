@@ -27,14 +27,26 @@ const login = () => {
         'error email invalido: ingrese nuevamente el email',
         validacionEmail
     )
-
     usuario.password = solicitarDato(
         'Ingrese una password',
         'Error password invalida,vuelva a ingresar una password de 6 caracteres y una mayuscula',
         validacionPassword
     )
-
     alert(`Usuario ${usuario.email} registrado`)
 
     return usuario
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

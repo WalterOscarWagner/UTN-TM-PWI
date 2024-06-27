@@ -1,4 +1,4 @@
-### calciladora
+### calculadora
 
 ## funcionalidades:
 

@@ -7,8 +7,10 @@ logica del login:
 
 vamos a solicitar al usuario un email
 validaremos que el email sea un email
-/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g.test('pepe@gmail.com)
+/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g.test(strigAValidar)
 
+Ejemplo de uso
+/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g.test('pepe@gmail.com)
 
 vamos a solicitar al usuario una password
 validar que tenga igual o mas de 6 carcteres,que tenga al menos 1 mayuscula y que no sea '' o null
@@ -23,7 +25,7 @@ login() // retorna el usuario {
 }
     */
 
-/*
+
 const tieneMayuscula = (palabra) => palabra.toLowerCase() !== palabra
 
 const validacionEmail = (email) => {
@@ -44,7 +46,7 @@ const login = () => {
 
     let email = prompt('Ingrese un email')
     while(!validacionEmail(email)){
-        email = prompt('Error email invalido: ingrese nuevamente')
+        email = prompt('Error email invalido: ingrese nuevamente el email')
     }
     usuario.email = email
 
@@ -58,11 +60,10 @@ const login = () => {
 
     return usuario
 }
-    */
-/*
+
 
 console.log(login())
-*/
+
 
 /*
 
