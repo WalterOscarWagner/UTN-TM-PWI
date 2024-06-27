@@ -73,7 +73,7 @@ for(let index = 0; index < nombres3.length; index =index + 1){
 // Eliminar a Leonel
 // Eliminar a el  anterior a lucas
 // Agregar antes de abril a 'sofia' sin eliminar a abril
-
+/*
 const nombres3 = [ 'maria' , 'pedro' , 'leonel' , 'ezequiel' , 'elias' , 'lucas'
 , 'julieta' , 'abril' , 'lautaro']
 
@@ -95,42 +95,60 @@ console.log(nombres3)
 
 
 
+// Consultar si esta en la lista
 
-
-
-
-/*
-let abrilPosition = nombres3.indexOf('abril')
-nombres3.splice(abril,0 , 'sofia')
-
-console.log(nombres3)
+console.log(nombres3.includes('leonel'))
 
 */
+
+/*
+for(let index = 0; index < nombres3.length; index = index + 1){
+    console.log(nombres3[index])
+}
+*/
+/*
+const nombres3 = [ 'maria' , 'pedro' , 'leonel' , 'ezequiel' , 'elias' , 'lucas'
+    , 'julieta' , 'abril' , 'lautaro']
+*/
+
+    // string.length => obtener la cantidad de caracteres
+
 /*
 Obtener cantidad total de caracteres de una lista de nombres:
 Quiero que dado el array de nombre, por cada nombre sumes la cantidad de caracteres 
 Al finalizar el recorrido decir ' la cantidad de caracteres es:{sumatoria de caracteres}'
 
 
-Ejemplo: ['pepe','juan'] // = 8
-*/
+Ejemplo: ['pepe','juan'] // = la sumatoria de caracteres es 8
 
 
-/*
+const nombres3 = [ 'maria' , 'pedro' , 'leonel' , 'ezequiel' , 'elias' , 'lucas'
+    , 'julieta' , 'abril' , 'lautaro']
+
+
+
 let caracteres = 0
 for (let index = 0 ; index < nombres3.length ; index = index + 1 ){
     caracteres = caracteres + nombres3[index].length
 }
 
 console.log( 'la cantidad de caracteres es: ' +  caracteres )
+
+
+// Como recorrer un array
+
+for(let nombre of nombres3){
+    console.log(nombre)
+}
 */
+
 
 
 // Dado el siguiente array crear un segundo array llamado mayusculas que solo contenga alguna palabra con alguna letra mayuscula 
 
 
-
 /*
+
 const nombres =['pepe', 'lucas', 'PEDRO', 'JuaN']
 
 //esto debe generar un segundo array con ['PEDRO', 'JuaN']
@@ -155,7 +173,8 @@ console.log(mayusculas);
 
 */
 
-/*
+
+
 const productos = [
     {
         title: 'tv samsung 32"',
@@ -194,8 +213,9 @@ const productos = [
     },
 ]
 
-*/
-/* crear un array llamado samsung que contenga los productos que sean de la marca samsung 
+
+/*
+// crear un array llamado samsung que contenga los productos que sean de la marca samsung 
 
 
 const samsung = []
@@ -209,7 +229,7 @@ console.log(samsung)
 */
 
 
-//Crear una funcion que se llame buscarProductos(string) recibira un string y cada producto del array de productos verificara si el titulo tiene incluido el string buscado Esta funcion debe retornar un array de prductos
+//Crear una funcion que se llame buscarProducto(string) recibira un string y cada producto del array de productos verificara si el titulo tiene incluido el string buscado Esta funcion debe retornar un array de productos
 /*
 EJEMPLO:
 buscarProducto('noblex') 
@@ -241,16 +261,20 @@ buscarProducto('celular')
 
 */
 
-/*
+
 function buscarProducto (busqueda){
     const arrayProductos = []
     for (const producto of productos){
-        if (producto.title.toLowerCase.includes(busqueda.toLowerCase())){
+        if (producto.title.includes(busqueda)){
             arrayProductos.push(producto)
         }
     }
     return arrayProductos;
 }
 
+
+console.log(buscarProducto('samsung'))
+/*
 let stringBuscado = prompt('ingrese el producto que desea buscar')
-console.log(buscarProducto ('stringBuscado'))*/
+console.log(buscarProducto ('stringBuscado'))
+*/
