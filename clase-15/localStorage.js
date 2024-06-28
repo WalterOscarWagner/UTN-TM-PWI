@@ -51,7 +51,7 @@ const login = () => {
     }
     usuario.password = password
 
-    alert(`Usuario ${usuario.email} registrado`,` ${usuario.password}`) 
+    alert(`Usuario ${usuario.email} registrado`) 
 
     return usuario
 }
