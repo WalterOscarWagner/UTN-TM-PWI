@@ -144,26 +144,84 @@ localStorage.setItem(
 */
 
 
-/*
-Vamos a crear una funcion llamada obtener historial que nos devuelva el array historial
-Vamos a crear en nuestro programa la funcion guardarEnHistorial que reciba un objeto y
-lo guarde en el localStorage dentro del array histori
 
-*/
 
-/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Vamos a crear una funcion llamada obtener historial que nos devuelva el array historial
+//Vamos a crear en nuestro programa la funcion guardarEnHistorial que reciba un objeto y
+//lo guarde en el localStorage dentro del array histori
+
+
+
+
 if(localStorage.getItem('historial') === null){
     localStorage.setItem('historial', JSON.stringify([]))
 }
 
 const obtenerHistorial = () => JSON.parse(localStorage.getItem('historial'))
+
 const guardarEnHistorial = (objeto) =>{
     const historial = obtenerHistorial()
     historial.push(objeto)
     localStorage.setItem('historial', JSON.stringify(historial))
 }
 
-*/
+guardarEnHistorial(
+    {nombre: 'walter',
+        password: '123'
+    }
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*
 Cada elemento del historial tendra el siguiente formato
