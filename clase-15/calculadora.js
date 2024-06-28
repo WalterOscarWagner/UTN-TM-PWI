@@ -24,8 +24,7 @@ login() // retorna el usuario {
     password: 'Pepe123'
 }
     */
-
-
+/*
 const tieneMayuscula = (palabra) => palabra.toLowerCase() !== palabra
 
 const validacionEmail = (email) => {
@@ -63,7 +62,7 @@ const login = () => {
 
 
 console.log(login())
-
+*/
 
 /*
 
@@ -80,11 +79,11 @@ Solicitar un numero 1 y validarlo
 Solicitar un numero 2 y validarlo
 
 Al finalizar las solicitudes mostrar el resultado por alerta de la sig manera:
-'El resultado de {numero1} {operacion} {numero2} es {resultado}'
+'El resultado de {a} {operacion} {b} es {resultado}'
 */
 
 
-/*
+
 const validacionOperacion = (operacion) =>{
     const OPERACIONES_DISPONIBLES = ['+','-']
     for(let operacionDisponible of OPERACIONES_DISPONIBLES){
@@ -124,18 +123,16 @@ const calculadora = () =>{
         resultado = Number(a) - Number(b)
     }
 
-    alert(`
-        El resultado de ${a} ${operacion} ${b} es ${resultado}
-        `)
+    alert(`El resultado de ${a} ${operacion} ${b} es ${resultado}`)
 
 }
 
 
 
 
-calculadora()
 
-*/
+
+
 
 /*
 
@@ -154,7 +151,7 @@ lo guarde en el localStorage dentro del array histori
 
 */
 
-
+/*
 if(localStorage.getItem('historial') === null){
     localStorage.setItem('historial', JSON.stringify([]))
 }
@@ -166,7 +163,7 @@ const guardarEnHistorial = (objeto) =>{
     localStorage.setItem('historial', JSON.stringify(historial))
 }
 
-
+*/
 
 /*
 Cada elemento del historial tendra el siguiente formato
@@ -236,7 +233,7 @@ guardarEnHistorial({
     fecha: '31/05/2024'
 })
 */
-
+/*
 const renderizarHistorial = () =>{
     let listaHistorial = ''
     const historial = obtenerHistorial()
@@ -254,7 +251,7 @@ const renderizarHistorial = () =>{
 
 alert(renderizarHistorial())
 
-
+*/
 
 
 
