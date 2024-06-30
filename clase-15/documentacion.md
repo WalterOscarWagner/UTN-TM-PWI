@@ -93,9 +93,32 @@ EJEMPLO DE USO:
 obtenerHistorial() => retornara un array historial [{},{}]
 guardarEnHistorial(objeto) => agrega al array guardado en localStorage el objeto recibido
 
+Cada elemento del historial tendra el sig formato
+{
+    accion: 'calculadora',
+    operacion: '+' || '-'
+    a: number,
+    b: number,
+    resultado: number
+    fecha: dd/mm/aaaa || '18/01/2020'
+}
+
+Esto significa que cuando usemos guardarEnHistorial debemos guardar el objeto de esa manera
 
 
+Vamos a crear una funcion llamada renderizarHistorial
 
+va a llamar al historial guardado y por cada elemento del historial vamos a crear la sig plantilla
+y la acumularan en un string y al finalizar el recorrido
+
+`
+Accion: {accion}
+Operacion: {operacion}
+Numeros: {a},{b}
+Resultado: {resultado}
+fecha: {fecha}
+
+`
 
 
 

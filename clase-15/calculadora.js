@@ -83,7 +83,7 @@ Al finalizar las solicitudes mostrar el resultado por alerta de la sig manera:
 */
 
 
-
+/*
 const validacionOperacion = (operacion) =>{
     const OPERACIONES_DISPONIBLES = ['+','-']
     for(let operacionDisponible of OPERACIONES_DISPONIBLES){
@@ -127,7 +127,7 @@ const calculadora = () =>{
 
 }
 
-
+*/
 
 
 
@@ -144,27 +144,12 @@ localStorage.setItem(
 */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //Vamos a crear una funcion llamada obtener historial que nos devuelva el array historial
 //Vamos a crear en nuestro programa la funcion guardarEnHistorial que reciba un objeto y
-//lo guarde en el localStorage dentro del array histori
+//lo guarde en el localStorage dentro del array historial
 
 
-
+/*
 
 if(localStorage.getItem('historial') === null){
     localStorage.setItem('historial', JSON.stringify([]))
@@ -184,47 +169,11 @@ guardarEnHistorial(
     }
 )
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+*/
 
 
 /*
-Cada elemento del historial tendra el siguiente formato
+//Cada elemento del historial tendra el siguiente formato
 {
     accion: 'calculadora',
     operacion: '+'||'-',
@@ -233,13 +182,15 @@ Cada elemento del historial tendra el siguiente formato
     resultado: number,
     fecha: dd/mm/aaaa || '18|01/2020'
 }
+*/
+/*
+//Esto significa que cuando usemos guardarEnHistorial debemos guardar el objeto de la esa manera
 
-Esto significa que cuando usemos guardarEnHistorial debemos guardar el objeto de la esa manera
 
+//Vamos a crear una funcion llamada renderizarHistorial
 
-Vamos a crear una funcion llamada renderizarHistorial
+//va a llamar al historial guardado y por cada elemento del historial vamos a crear la sig plantilla 
 
-va a llamar al historial guardado y por cada elemento del historial vamos a crear la sig plantilla 
 `
 Accion: {accion}
 Operacion: {operacion}
@@ -247,12 +198,12 @@ Numeros: {a}, {b}
 Resultado: {resultado}
 fecha: {fecha}
 `
+*/
+//y la acumularan en un string y al finalizar el recorrido mostraran el string por alerta
 
-y la acumularan en un string y al finalizar el recorrido mostraran el string por alerta
 
-
-Para hacer el ejercicio recuerden previamente guardar algunas operaciones en el historial y borren las anteriores
-
+//Para hacer el ejercicio recuerden previamente guardar algunas operaciones en el historial y borren las anteriores
+/*
 guardarEnElHistorial({
     accion: 'calculadora',
     operacion: '+',
@@ -262,7 +213,10 @@ guardarEnElHistorial({
     fecha:  '18|01/2020'
 })
 */
-/*
+
+
+
+
 guardarEnHistorial ({
     accion: 'calculadora',
     operacion: '+',
@@ -290,8 +244,8 @@ guardarEnHistorial({
     resultado: 16,
     fecha: '31/05/2024'
 })
-*/
-/*
+
+
 const renderizarHistorial = () =>{
     let listaHistorial = ''
     const historial = obtenerHistorial()
@@ -309,7 +263,7 @@ const renderizarHistorial = () =>{
 
 alert(renderizarHistorial())
 
-*/
+
 
 
 
