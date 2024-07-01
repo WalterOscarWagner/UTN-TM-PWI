@@ -1,5 +1,5 @@
-/*
 
+/*
 Crear una funcion llamada registraProducto
 La funcion solicitara al usuario:
 -Titulo: debe ser un string con mas de 4 caracteres
@@ -21,8 +21,8 @@ Confirmar producto:
 Si el usuario elige cancelar(con el button) o escribe 'CANCELAR' o 'NO' se volvera a comenzar
 Si el usuario presiona aceptar o escribe 'SI' entonces la funcion creara un objeto del producto y lo
 mostrara por consola
-
 */
+
 const categoriasDisponibles =['tecnologia', 'hogar', 'otros']
 const validarStringConMinimo = (valor, minimo) => valor && isNaN(valor) && valor.lenght >= minimo
 
@@ -31,6 +31,7 @@ const validarPrecio = (valor) =>valor && !isNaN(valor) > 1
 const validarDescripcion = (valor) => validarStringConMinimo(valor, 10)
 const validarCategoria = (valor) => categoriasDisponibles.includes(valor)
 const validarMarca = (valor) => validarStringConMinimo(valor, 3)
+const validarNegacion = (confirmacion) => confirmacion === null || confirmacion.toLowerCase() === 'cancelar' || confirmacion.toLowerCase() === 'no'
 
 const crearObjetoConfeccion = (mensaje, error, validacion) =>{
     return {
@@ -69,6 +70,7 @@ const DATOS_PRODUCTO = {
 }
 
 
+
 const solicitarDato = (objetoDeConfeccion) => {
     
     let dato = prompt(objetoDeConfeccion.mensaje)
@@ -79,8 +81,39 @@ const solicitarDato = (objetoDeConfeccion) => {
 }
 
 
+const registraProducto = () => {
+    let titulo = solicitarDato(DATOS_PRODUCTO.TITULO)
+    let precio = solicitarDato(DATOS_PRODUCTO.PRECIO)
+    let descripcion = solicitarDato(DATOS_PRODUCTO.DESCRIPCION)
+    let categoria = solicitarDato(DATOS_PRODUCTO.CATEGORIA)
+    let marca = solicitarDato(DATOS_PRODUCTO.MARCA)
 
+    let mensajeConfirmacion =`
+    Esta seguro de confirmar el producto:
+    Titulo: ${titulo}
+    Precio: ${precio}
+    Descripcion: ${descripcion}
+    Categoria: ${categoria}
+    Marca: ${marca}
+    `
+    let confirmacion = prompt(mensajeConfirmacion)
+    if(validarNegacion(confirmacion)){
+        registraProducto()
+    }
+    else{
+        const producto = {
+            titulo,
+            precio,
+            descripcion,
+            categoria,
+            marca
+        }
+        console.log(producto)
+    }
 
+}
+
+registraProducto()
 
 
 
