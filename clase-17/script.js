@@ -3,24 +3,24 @@
 // Document es una variable global que se crea al abrir la pagina
 
 
-console.log(document)
+/*console.log(document)*/
 
-/*
+
 console.dir(document)
 
 // Obtiene un elemento por id, si lo encuentra lo retorna (como objeto), sino, retorna null
+
+/*
 const titulo = document.getElementById('titulo')
 console.dir(titulo.innerText)
-*/
+
 
 /*let nombre = prompt(' ingresa tu nombre ')*/
 /*
 titulo.innerText = 'Hola' 
 
 const cajaProducto = document.getElementById('caja-producto')
-console.dir(cajaProducto
-
-)
+console.dir(cajaProducto)
 
 
 cajaProducto.innerHTML = `
@@ -30,6 +30,7 @@ cajaProducto.innerHTML = `
     `
 
 */
+
 // EJERCICIO
 
 
@@ -47,8 +48,8 @@ h2: Nombre completo: {nombre} {apellido}
 span: Edad: {edad}
 span: Direccion: {direccion}
 
-*/
-/*
+
+
 
 const usuario = {
     nombre: 'pepe',
@@ -56,16 +57,18 @@ const usuario = {
     direccion: 'siempreviva 123',
     edad: '40'
 }
-
-const usuarioo = document.getElementById('usuario')
-
+*/
+/*const usuarioo = document.getElementById('usuario')*/
+/*
 usuario.innerHTML = `
     <h2>nombre completo: ${usuario.nombre} ${usuario.apellido}</h2>
     <span>Edad: ${usuario.edad}</span>
     <span>Direccion: ${usuario.direccion}</span>
 
 `
+console.dir(usuario)
 */
+
 /*
 const productos = [
     {
@@ -105,17 +108,18 @@ for(const producto of productos){
         <img width='200px' src="${producto.thumbnail}"/>
         <span>Precio: ${producto.precio}</span>
         <p>${producto.descripcion}</p>
+        <button>Comprar</button>
         </div>
         <hr>
     `
 }
-
+console.log(plantillaProductos)
 
 productosHTML.innerHTML = plantillaProductos
 
 */
+
 /*
-*
 Renderizar un carrito:
 
 Un array de items llamado carrito
@@ -140,7 +144,7 @@ Por debajo del div donde renderizamos el carrito, crear en HTML un span que este
 Llamar dicho span por JS y cambiar el texto para que diga : TOTAL: ${precio total}
 */
 
-/*
+
 
 
 const carrito = [
@@ -163,8 +167,9 @@ const carrito = [
         id: 3,
         precio: 4000,
         cantidad: 2,
-        img: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Farticulo.mercadolibre.com.ar%2FMLA-1133858696-bicicleta-mtb-rodado-29-zion-pampa-21-vel-frenos-a-discos-_JM&psig=AOvVaw3o1e0fEaCIWDsYiz7Rs-N1&ust=1718463823825000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLjJroOv24YDFQAAAAAdAAAAABAP'
+        img: 'https://m.media-amazon.com/images/I/61UUChLhLgL._AC_SL500_.jpg'
     }
+    
 ]
 
 
@@ -183,7 +188,7 @@ const renderizarCarrito = (carrito) =>{
 }
 
 
-*/
+console.dir(carrito)
 
 
 

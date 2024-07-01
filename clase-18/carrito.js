@@ -20,7 +20,12 @@ object:
 
 Por debajo del div donde renderizamos el carrito, crear en HTML un span que este vacio
 Llamar dicho span por JS y cambiar el texto para que diga : TOTAL: ${precio total}
+
+Crear una funcion llamada renderizarCarrito(carrito) y ejecutara toda
+la logica de crear la plantilla y mostrarla en HTML
+
 */
+
 
 const carrito = [
     {
@@ -59,6 +64,7 @@ for(const objeto of carrito){
     <div>
         <h3> ${objeto.nombre} #${objeto.id}</h3>
         <img width = '100px' src="${objeto.thumbnail}"/>
+        <br>
         <span> PRECIO UNITARIO: ${objeto.precio} x ${objeto.cantidad}</span>
         <span> TOTAL: ${objeto.precio * objeto.cantidad}</span>
     </div>
@@ -90,7 +96,7 @@ eliminarItemPorId(3)
 Busca la bicicleta y como tiene 1 de cantidad,elimina el item del carrito
 Al finalizar invocaremos nuevamente a renderizar carrito
 */
-
+/*
 const buscarObjetoPorId = (id) =>{
     for(const objeto of carrito){
         if(objeto.id === id){
@@ -118,13 +124,16 @@ const eliminarObjetoPorId = (id) =>{
         console.error('Error: objeto con id inexistente')
     }
 
-    /*const objetoBuscado = buscarObjetoPorId(id)*/
+    /*const objetoBuscado = buscarObjetoPorId(id)
+    */
+
+/*
     console.log(objetoBuscado)
-}
+
 
 
 eliminarObjetoPorId()
-
+*/
 
 
 /*
