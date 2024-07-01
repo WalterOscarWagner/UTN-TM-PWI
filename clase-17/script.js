@@ -3,7 +3,7 @@
 // Document es una variable global que se crea al abrir la pagina
 
 
-/*console.log(document)*/
+console.log(document)
 
 /*
 console.dir(document)
@@ -140,7 +140,7 @@ Por debajo del div donde renderizamos el carrito, crear en HTML un span que este
 Llamar dicho span por JS y cambiar el texto para que diga : TOTAL: ${precio total}
 */
 
-
+/*
 
 
 const carrito = [
@@ -183,7 +183,7 @@ const renderizarCarrito = (carrito) =>{
 }
 
 
-
+*/
 
 
 
