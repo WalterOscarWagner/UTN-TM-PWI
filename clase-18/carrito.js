@@ -114,18 +114,7 @@ console.log(objetoBuscado)
 eliminarObjetoPorId(55)
 
 
-
-
-
-
-
-
-
-
-
-
-
-    /*
+    
     if(objetoBuscado){
         if(objetoBuscado.cantidad === 1){
             //LOGICA PARA ELIMINAR ITEM
@@ -143,34 +132,14 @@ eliminarObjetoPorId(55)
         console.error('Error: objeto con id inexistente')
     }
 
-}
-
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     /*const objetoBuscado = buscarObjetoPorId(id)
     */
 
 /*
     console.log(objetoBuscado)
 
-
-
 eliminarObjetoPorId()
 */
-
 
 /*
 Crear la funcion llamada agregarObjetoAlCarrito(objeto)
@@ -194,7 +163,7 @@ llamada cantidad y con el valor 1
 */
 
 
-/*
+
 const agregarObjetoAlCarrito = (producto) => {
     const objetoBuscado = carrito.find((objeto) => objeto.id === producto.id)
     if(objetoBuscado){
@@ -213,6 +182,8 @@ const agregarObjetoAlCarrito = (producto) => {
 
 
 
+
+
     agregarObjetoAlCarrito ({
         nombre: 'Toyota GR86',
         id: 4,
@@ -221,4 +192,3 @@ const agregarObjetoAlCarrito = (producto) => {
 
     })
 
-*/
