@@ -96,7 +96,7 @@ eliminarItemPorId(3)
 Busca la bicicleta y como tiene 1 de cantidad,elimina el item del carrito
 Al finalizar invocaremos nuevamente a renderizar carrito
 */
-/*
+
 const buscarObjetoPorId = (id) =>{
     for(const objeto of carrito){
         if(objeto.id === id){
@@ -107,6 +107,13 @@ const buscarObjetoPorId = (id) =>{
 
 const eliminarObjetoPorId = (id) =>{
     const objetoBuscado = carrito.find ((objeto) =>  objeto.id === id)
+
+
+console.log(objetoBuscado)
+}
+eliminarObjetoPorId(55)
+
+    /*
     if(objetoBuscado){
         if(objetoBuscado.cantidad === 1){
             //LOGICA PARA ELIMINAR ITEM
@@ -123,6 +130,23 @@ const eliminarObjetoPorId = (id) =>{
     else{
         console.error('Error: objeto con id inexistente')
     }
+
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     /*const objetoBuscado = buscarObjetoPorId(id)
     */
@@ -158,15 +182,15 @@ llamada cantidad y con el valor 1
 */
 
 
-
+/*
 const agregarObjetoAlCarrito = (producto) => {
     const objetoBuscado = carrito.find((objeto) => objeto.id === producto.id)
     if(objetoBuscado){
-        /* Logica para incrementar la cantidad */
+        // Logica para incrementar la cantidad 
         objetoBuscado.cantidad = objetoBuscado.cantidad + 1
     }
     else {
-        /* Logica para agregar el producto al carrito */
+        // Logica para agregar el producto al carrito 
         
             producto.cantidad = 1
             carrito.push(producto)
@@ -185,63 +209,4 @@ const agregarObjetoAlCarrito = (producto) => {
 
     })
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+*/
