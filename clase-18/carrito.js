@@ -177,18 +177,12 @@ const agregarObjetoAlCarrito = (producto) => {
             carrito.push(producto)
         }
         renderizarCarrito(carrito)
-
     }
-
-
-
-
 
     agregarObjetoAlCarrito ({
         nombre: 'Toyota GR86',
         id: 4,
         precio: 25000,
         thumnail: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWAApjDiM2t4OqVSjXoJWwNFl4k32NArjLSQ&s'
-
     })
 
