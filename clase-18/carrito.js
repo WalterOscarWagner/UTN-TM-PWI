@@ -108,10 +108,22 @@ const buscarObjetoPorId = (id) =>{
 const eliminarObjetoPorId = (id) =>{
     const objetoBuscado = carrito.find ((objeto) =>  objeto.id === id)
 
-
 console.log(objetoBuscado)
 }
+
 eliminarObjetoPorId(55)
+
+
+
+
+
+
+
+
+
+
+
+
 
     /*
     if(objetoBuscado){
