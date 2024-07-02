@@ -15,8 +15,8 @@ btn2HTML.onclick = alertar
 
 const btn3HTML = document.querySelector('.btn-3')
 
+/*btn3HTML.addEventListener('click', alertar)*/
 btn3HTML.addEventListener('mouseover', alertar)
-
 
 /*
 En html tendremos un numero que se mostrara en un span, dicho numero seria inicialmente 1
@@ -28,7 +28,6 @@ Crear el boton de decrementar
 
 (Opcional) que no se pueda decrementar a - de 1
 */
-
 const contadorHTML = document.getElementById('contador')
 const btnIncrementarHTML = document.querySelector('.btn-incrementar')
 const btnDecrementarHTML = document.querySelector('.btn-decrementar')
@@ -37,6 +36,30 @@ const btnDecrementarHTML = document.querySelector('.btn-decrementar')
 const renderizarContador = () =>{
     contadorHTML.innerText = estadoContador
 }
+const incrementarContador = () =>{
+    estadoContador = estadoContador + 1
+    renderizarContador(estadoContador )
+}
+
+const decrementarContador = () =>{
+    estadoContador = estadoContador - 1
+    renderizarContador(estadoContador)
+}
+
+
+
+let estadoContador = 1
+renderizarContador()
+
+btnIncrementarHTML.addEventListener('click', incrementarContador)
+btnDecrementarHTML.addEventListener('click', decrementarContador)
+
+
+/*
+const renderizarContador = () =>{
+    contadorHTML.innerText = estadoContador
+}
+
 const handleIncrementarContador = () =>{
     estadoContador = estadoContador + 1
     renderizarContador()
@@ -57,11 +80,11 @@ btnDecrementarHTML.addEventListener('click', handleDecrementarContador)
 
 const formLoginHTML = document.getElementById('form-login')
 
+*/
 
-
-
+/*
 const handleLogin = ( evento ) =>{
-    /* Prevenimos que se racarge la pagina al enviarse el formulario*/
+    // Prevenimos que se racarge la pagina al enviarse el formulario
     evento.preventDefault()
     console.log('formulario enviado')
     console.dir(formLoginHTML.username.value)
@@ -71,7 +94,7 @@ const handleLogin = ( evento ) =>{
 
 formLoginHTML.addEventListener('submit', handleLogin)
 
-
+*/
 
 
 
