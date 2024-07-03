@@ -95,9 +95,9 @@ console.dir(formLoginHTML)
 const handleLogin = ( evento ) =>{
     // Prevenimos que se racarge la pagina al enviarse el formulario
     evento.preventDefault()
-    console.log('formulario enviado')/*
+    console.log('formulario enviado')
     console.dir(formLoginHTML.username.value)
-    console.dir(formLoginHTML.password.value)*/
+    console.dir(formLoginHTML.password.value)
 }
 
 
