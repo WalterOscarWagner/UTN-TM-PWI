@@ -26,13 +26,44 @@ const solicitarUsuarios = async () =>{
 solicitarUsuarios()
 
 
+/*
+Ejecutar una peticion HTTP con metodo GET  a esta direccion: https://jsonplaceholder.typicode.com/posts
+
+Una vez obtenido el JSON de esta direccion deberas renderizar todos los post en html en un div con la siguiente estructura
+
+<div>
+    <h3>{post.title}</h3>
+    <p>{post.body}</p>
+    <button>corazon</button>
+</div>
+
+*/
 
 
+fetch('https://jsonplaceholder.typicode.com/posts', {
+    method: 'POST',
+    body: JSON.stringify({
+        title: 'foo',
+        body: 'bar',
+        userId: 1,
+    }),
+    headers: {
+        'Content-type': 'application/json; charset=UTF-8',
+    },
+})
 
 
+/* 
+Crear un formulario de posteo
+el formulario tendra un input para el titulo 
+y un textarea para el body y un boton con el texto post que active el evento submit
+
+Cuando se envie el formulario se debera capturar titulo y body y se envia via fetch a esta direccion: 
+'https://jsonplaceholder.typicode.com/posts'
+Y van a mostrar por consola un 'Enviado'
 
 
-
+*/
 
 
 
