@@ -141,7 +141,7 @@ NaN + '' && 0
 
 81 * null || 'pepe' && 'juan'
 
-0 || 'pepe' 66 'juan'
+0 || 'pepe' && 'juan'
 
 
 
