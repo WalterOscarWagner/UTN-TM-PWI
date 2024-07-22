@@ -6,8 +6,8 @@
 || OR => o logico
 
 && AND => y logico
-
 */
+
 /*
 falsy:
 false
@@ -18,7 +18,8 @@ null
 NaN
 undefined
 */
-
+let resultado = '' || 'pepe'
+console.log(resultado)
 
 /*
 !(0 * null) //true
@@ -27,10 +28,6 @@ undefined
 
 !NaN //TRUE
 */
-
-
-
-
 
 /*
 quiero dejar pasar a alguien que tenga mas de 18 años o tenga mas de 100000
@@ -87,7 +84,7 @@ condicion = 'pepe@gmail.com'
 nombre = ''
 email = ''
 
-condicion = no,bre || email
+condicion = nombre || email
 
 condicion = ''
 
@@ -134,7 +131,7 @@ condicion = false
 
 'pepe' * 1 +'' && 0
 NaN + '' && 0
-'NaN' && 0
+'NaN' && 0 = 0
 
 
 */
