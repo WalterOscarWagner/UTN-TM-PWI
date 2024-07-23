@@ -18,9 +18,10 @@ null
 NaN
 undefined
 */
+/*
 let resultado = '' || 'pepe'
 console.log(resultado)
-
+*/
 /*
 !(0 * null) //true
 
@@ -139,15 +140,19 @@ NaN + '' && 0
 
 9 * '9' * null || 'pepe' && 'juan'
 
-81 * null || 'pepe' && 'juan'
+ 81 * null || 'pepe' && 'juan'
 
 0 || 'pepe' && 'juan'
 
+'pepe' && 'juan'= 'juan'
+
+*/
+/*
+
+!('' + 0 - 0 * !null + false) && 'juan' || 'pepe' || 'maria' = 'juan'
 
 
 */
-
-
 /*
 
 Variables
