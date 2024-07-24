@@ -1,6 +1,8 @@
 
+
 /* WHILE ,
-el bucle while repite un bloque de codigo mientras se cumpla x condicion
+el bucle while repite un bloque de codigo mientras se cumpla
+x condicion
 
 */
 
@@ -9,13 +11,18 @@ el bucle while repite un bloque de codigo mientras se cumpla x condicion
 let numero = prompt('Ingrese un numero')
 
 while(!numero || isNaN(numero)){
-    alert('no ingresaste un numero')
-    numero = prompt('Ingresa nuevamente un numero')
+    alert('NO ingresaste un dato numerico')
+    numero = prompt('Ingresa un dato numerico')
 }
 */
 
 /* 
 Solicitar un string al usuario y validar que sea un string valido
+Casos invalidos:
+''
+null
+number(cualquier tipo de number excepto el NaN)
+
 
 let nombre = prompt('ingrese su nombre')
 
@@ -31,7 +38,7 @@ while(!nombre || !isNaN(nombre)){
 /* Es un bucle que usamos cuando queremos repetir un bloque
 de codigo una determinada cantidad de veces
 */
-/*
+
 console.log('Hola mundo')
 
 
@@ -39,16 +46,10 @@ console.log('Hola mundo')
 for(let iterador = 1; iterador <= 15; iterador = iterador + 1){
     console.log('hola mundo' + iterador)
 }
-*/
-
-
-
 
 
 /*
 //Solicitar 1 nombre y mostrarlo por alerta 3 veces
-
-
 
 
 for(let iterador = 1; iterador <= 3; iterador = iterador + 1){
@@ -211,7 +212,7 @@ vamos a solicitar un numero la cantidad de repeticiones ingresada por el usuario
 el resultado de la suma
 validad que el numero ingresado sea un numero,en caso de no vollver a solicitarlo
 validar que la cantidad de repeticiones ingresada sea un numero, en caso que no volver a solicitarlo
-*/
+
 
 function solicitarYValidarNumero (){
     let numero = prompt('ingrese un numero')
@@ -231,7 +232,7 @@ for (let i = 1; i <= cantidadDeRepeticiones; i = i + 1) {
 }
 alert(" El resultado es: " + suma)
 
-
+*/
 
 
 
