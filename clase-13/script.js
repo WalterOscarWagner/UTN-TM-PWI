@@ -9,8 +9,7 @@ calcularSumatoria(1,2,3) => 6
 
 
 function calcularSumatoria (a,b,c){
-    let sumatoria = a + b + c
-    return sumatoria
+    return a + b + c
 }
 console.log(calcularSumatoria(1 ,2 ,3))
 
@@ -20,7 +19,8 @@ console.log(calcularSumatoria(1 ,2 ,3))
 mayor(7,2) 7
 
 
-function mayor(a , b){
+
+function mayor(a,b){
     if(a > b){
     return a
     }
@@ -28,9 +28,9 @@ function mayor(a , b){
     return b
     }
 }
-console.log(mayor(2,6))
-
+console.log(mayor(7,2))
 */
+
 
 /*
 3-crear una funcion que se llame generarEmail que reciba un nombreDeUsuario y
@@ -44,8 +44,8 @@ function generarEmail(nombreDeUsuario){
 }
 
 console.log(generarEmail('pepe'))
-
 */
+
 
 
 
@@ -59,14 +59,11 @@ console.log(generarEmail('pepe'))
 const calcularSumatoria = (a, b, c) => a + b + c
 
 console.log(calcularSumatoria(1,2,3))
-
 */
 
+// Validar string
 
 /*
-validar string
-
-
 const solicitar_y_validar_string = () => {
     let stringSolicitado = prompt("Ingrese un dato")
     while(!stringSolicitado || !isNaN(stringSolicitado)){
@@ -92,14 +89,14 @@ retorne nombreDeUsuario + '@gmail.com'
 
 
 function generarEmail(nombreDeUsuario){
-    return String(nombreDeUsuario +' @gmail')
+    return nombreDeUsuario +' @gmail'
 }
 
 const generarEmail = (nombreDeUsuario) => nombreDeUsuario + '@gmail.com'
 
 console.log(generarEmail('pepe'))
-*/
 
+*/
 
 /*
 
@@ -116,11 +113,12 @@ function calcularSumatoria(a,b,c){
 const calcularSumatoria = (a , b , c ) => a + b + c 
 
 console.log(5+6+8)
-
 */
+
 /*
 2-Crear una funcion que reciba 2 numeros y siempre devuelva el mayor
 mayor(8,9) 9
+
 
 const obtenerMayor =( a , b ) => {
     if(a > b){
@@ -131,8 +129,7 @@ const obtenerMayor =( a , b ) => {
     }
 }
 
-
 console.log(obtenerMayor( 8 , 9 ))
-
 */
+
 

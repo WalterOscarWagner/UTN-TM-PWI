@@ -1,7 +1,7 @@
 
 /* TIPOS DE DATOS OBJETOS */
 
-/*
+
 let edadUsuario = 19
 
 let nombreUsuario = 'pepe'
@@ -10,8 +10,8 @@ let apellidoUsuario = 'suarez'
 
 
 //Formato key-value
-*/
-/*
+
+
 let usuario = {
     'edad': 19,
     'nombre': 'pepe',
@@ -21,9 +21,9 @@ let usuario = {
     }
     }
 
-console.log('hola ' + usuario['mejor amigo']['nombre'])
+console.log(' hola ' + usuario ['mejor amigo']['nombre'])
 
-*/
+
 
 
 /*
@@ -34,7 +34,7 @@ nombre : string
 marca : string
 id : number
 desripcion : string
-
+*/
 
 let producto ={
     precioUnitario: 50000,
@@ -45,8 +45,9 @@ let producto ={
 }
 
 
-console.log('vendo '+ producto['nombreCompleto '] )
-*/
+console.log('El producto ' + producto ['nombreCompleto'] + ' cuesta $ ' + 
+producto ['precioUnitario'])
+
 
 
 
@@ -54,35 +55,35 @@ console.log('vendo '+ producto['nombreCompleto '] )
 /* 
 'El usuario {name} {lastname} creo su cuenta en fecha {created_at} vive en {adress}
 y su telefono es {tel}'
-*/
-/*
+
+
 Por consola mostrar un informe del usuario
 'El usuario{nombre} {lastname} tiene las preferencias
-de usuario en : {theme}\nLenguaje: {lang}'
+de usuario en : \nModo:{theme}\nLenguaje: {lang}'
 
 
-console.log('El usuario :' + user['name'] +'' + user['lastname']
-+ 'tiene las preferencias en :' + '\n' + user['user preferences']['theme']+
-'\n' + user['user preferences']['lang'])
 
-*/
-/*
 const user = {
     name:'pepe',
     lastname: 'suarez',
     'user preferences':{
         theme: 'dark-mode',
         lang: 'spanish'
-    },
-    'user info':{
-        'created_at': '18/9/2005',
-        'adress': 'av siempre viva 742',
-        tel: '22 1323-2122'
     }
 }
+
+console.log('El usuario :' + user['name'] +' '+ user['lastname'] +' '
++ 'tiene las preferencias en :' + '\n' + user['user preferences']['theme']+
+'\n' + user['user preferences']['lang'])
+
+*/
+/*
+Por consola mostrar un informe del usuario'El usuario{nombre} {lastname} 
+tiene las preferenciasde usuario en : \nModo:{theme}\nLenguaje: {lang}'
+
+
 */
 
-/*
 const user = {
     name: 'pepe',
     lastname: 'suarez',
@@ -91,43 +92,34 @@ const user = {
         lang: '-español'
     },
     'user-info':{
-    'created_at': '18/02/2005',
-    'adress': 'av siempre viva 472',
+    createdAt: '18/02/2005',
+    adress: 'av siempre viva 472',
     tel: '+22 1323-2122'
     }
     }
 
-
+/*
     console.log(`
         El usuario ${user.name} ${user.lastname} tiene las preferencias en:
         -Modo: ${user['user preferences'].theme}
         -Lenguaje: ${user['user preferences'].lang}
         `)
-
 */
 
-
 /*
-    console.log('El usuario :' user [name+' ' + user[' lastname'] +'creo su cuenta en fecha'
-        + user['user-info'][' created_at'] + 'vive en' + user[ 'user-info']['adress'] + ' y su telefono es'
-        + user['user-info']['tel'])
+'El usuario{name}{lastname} creo su cuenta en fecha {createdAt}vive en
+{adress} y su telefono es {tel}
 */
 
-
-/*
     console.log(`
-        El usuario ${user['name']} ${user['lastname']} creo su cuenta en fecha
-        ${user ['user info'] ['created_at']}
-        vive en ${user['user info'] ['adress']}
-        y su telefono es ${user['user info']['tel']}
+        El usuario ${user['name']} ${user['lastname']} creo su cuenta
+        en fecha ${user ['user-info']['createdAt']}
+        vive en ${user['user-info']['adress']}
+        y su telefono es ${user['user-info']['tel']}
         `)
-*/
 
-/*
-console.log('El usuario:' + usuario['nombre'] +' ' + usuario['apellido'] + ' ' +
-    'tiene las preferencias en:' + 
-    `\n` + usuario['preferencias']['tema'] + `\n` + usuario['preferencias']['lenguaje'])
-*/
+
+
 
 
 /* reasignamos el valor de la propiedad name
@@ -229,7 +221,7 @@ calcularIva(100, 'A')
     factura
 }
 */
-
+/*
 const calcularIva = (precio, tipo_factura ) => {
     let iva = precio * 0.21
 
@@ -251,7 +243,7 @@ const calcularIva = (precio, tipo_factura ) => {
 console.log(calcularIva(1000, 'A'))
 console.log(calcularIva(1000,'B'))
 
-
+*/
 
 
 
