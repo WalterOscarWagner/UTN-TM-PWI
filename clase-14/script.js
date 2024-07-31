@@ -1,14 +1,13 @@
 // arrays
 
-/*
 
-const nombres = [ 'maria' , 'pedro' , 'leonel' , 'ezequiel' , 'elias' , 'lucas' ,
-                    'julieta' , 'abril' , 'lautaro']
 
+const nombres = [ 'maria' , 'pedro' , 'leonel' , 'ezequiel' , 'elias' , 
+    'lucas' ,'julieta' , 'abril' , 'lautaro']
 
 console.log(nombres[1])
-console.log('tengo' + nombres.length + 'nombres')
-*/
+console.log('tengo ' + nombres.length + ' nombres')
+
 
 // Metodos de arrays
 
@@ -233,7 +232,7 @@ console.log(samsung)
 EJEMPLO:
 buscarProducto('noblex') 
 */
-
+/*
 const productos = [
     {
         title: 'tv samsung 32"',
@@ -285,3 +284,4 @@ function buscarProducto (busqueda){
 
 let stringBuscado = prompt('ingrese el producto que desea buscar')
 console.log(buscarProducto ('stringBuscado'))
+*/
