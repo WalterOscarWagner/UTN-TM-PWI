@@ -2,8 +2,7 @@
 
 
 
-const nombres = [ 'maria' , 'pedro' , 'leonel' , 'ezequiel' , 'elias' , 
-    'lucas' ,'julieta' , 'abril' , 'lautaro']
+const nombres = [ 'pepe' , 'juan', 'ezequiel' ]
 
 console.log(nombres[1])
 console.log('tengo ' + nombres.length + ' nombres')
@@ -11,94 +10,108 @@ console.log('tengo ' + nombres.length + ' nombres')
 
 // Metodos de arrays
 
-// .push()
+// .push() : agrega un elemento al final del array y devuelve la nueva longitud
 
+
+nombres.push('maria')
+
+console.log(nombres)
+
+// .unshift(): agregar un elemento al principio del array
 /*
-nombres.push('walter')
+nombres.unshift('pepe')
 
 console.log(nombres)
 
 */
-/*
+
 let nombre = 'pepe'
 nombre = nombre.toUpperCase()
 
 console.log(nombre)
 
-*/
 
-// pop
 
-//Eliminar a leonel
-//eliminar al anterior a lucas
-//agregar antes de abril a 'sofia' sin eliminar a abril
+// .pop: elimina el ultimo elemento y lo retorna
 
+let ultimoElemento = nombres.pop()
+
+console.log(ultimoElemento)
+
+
+//.shift: elimina el primer elemento y lo retorna
 
 /*
+// SOLAMENTE FUNCIONA BIEN CON LOS ARRAYS DE STRING
+
+//.indexOf() : devuelve la posicion de un string en el array de string
+
+let posicionDeJuan = nombres.indexOf('juan')
+console.log('la posicion de juan es ' + posicionDeJuan)
+console.log(nombres)
+*/
+/*
+//.splice() : elimina elementos a partir de... y pones cuantos queres eliminar
+Tambien sirve para agregar elementos a partir de...
+
+nombres.splice(posicionDeJuan,1)
+
+console.log(nombres)
+
 
 const nombres2 = ['maria','pedro','leonel','ezequiel','elias']
 
+//Eliminar a Ezequiel
 
-
+// Primero averiguo cual es la posicion
 
 let posicionDeEzequiel = nombres2.indexOf('ezequiel')
 
 console.log('la posicion de ezequiel es' + posicionDeEzequiel)
 
-*/
+// Ahora lo elimino
 
-/*
 nombres2.splice(posicionDeEzequiel,1)
 console.log(nombres2)
-
-let posicionDeLucas = nombres.indexOf('lucas')
-nombres2.splice((posicionDeLucas -1),1)
-console.log(nombres3)
-
-
-let abrilPosition = nombres3.indexOf('abril')
-nombres3.splice(abr,0 , 'sofia')
-console.log(nombres3)
-
-*/
-/*
-for(let index = 0; index < nombres3.length; index =index + 1){
-    console.log(nombres3[index])
-}
 */
 
-
-
-// Eliminar a Leonel
-// Eliminar a el  anterior a lucas
-// Agregar antes de abril a 'sofia' sin eliminar a abril
-/*
-const nombres3 = [ 'maria' , 'pedro' , 'leonel' , 'ezequiel' , 'elias' , 'lucas'
-, 'julieta' , 'abril' , 'lautaro']
-
-
+const nombres3 = ['maria','pedro','leonel','ezequiel','elias','lucas'
+    ,'julieta','abril','lautaro']
 console.log(nombres3)
 
+
+// Eliminar a leonel
 
 let posicionDeLeonel = nombres3.indexOf('leonel')
+
 nombres3.splice(posicionDeLeonel,1)
+console.log(nombres3)
+
+//eliminar al anterior a lucas
 
 let posicionDeLucas = nombres3.indexOf('lucas')
 nombres3.splice((posicionDeLucas -1),1)
-
-let posicionDeAbril = nombres3.indexOf('abril')
-nombres3.splice(posicionDeAbril,0,'sofia')
-
 console.log(nombres3)
 
 
+//agregar antes de 'abril' a 'sofia' sin eliminar a 'abril'
+
+let abrilPosition = nombres3.indexOf('abril')
+nombres3.splice(abrilPosition,0 , 'sofia')
+console.log(nombres3)
+
+
+
+for(let index = 0; index < nombres3.length; index =index + 1){
+    console.log(nombres3[index])
+}
 
 
 // Consultar si esta en la lista
 
 console.log(nombres3.includes('leonel'))
 
-*/
+
 
 /*
 for(let index = 0; index < nombres3.length; index = index + 1){
