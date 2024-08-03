@@ -101,23 +101,17 @@ nombres3.splice(abrilPosition,0 , 'sofia')
 console.log(nombres3)
 
 
-
-for(let index = 0; index < nombres3.length; index =index + 1){
-    console.log(nombres3[index])
-}
-
-
 // Consultar si esta en la lista
 
 console.log(nombres3.includes('leonel'))
 
 
 
-/*
+
 for(let index = 0; index < nombres3.length; index = index + 1){
     console.log(nombres3[index])
 }
-*/
+
 /*
 const nombres3 = [ 'maria' , 'pedro' , 'leonel' , 'ezequiel' , 'elias' , 'lucas'
     , 'julieta' , 'abril' , 'lautaro']
