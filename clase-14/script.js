@@ -1,7 +1,7 @@
 // arrays
 
 
-
+/*
 const nombres = [ 'pepe' , 'juan', 'ezequiel' ]
 
 console.log(nombres[1])
@@ -16,7 +16,7 @@ console.log('tengo ' + nombres.length + ' nombres')
 nombres.push('maria')
 
 console.log(nombres)
-
+*/
 // .unshift(): agregar un elemento al principio del array
 /*
 nombres.unshift('pepe')
@@ -24,7 +24,7 @@ nombres.unshift('pepe')
 console.log(nombres)
 
 */
-
+/*
 let nombre = 'pepe'
 nombre = nombre.toUpperCase()
 
@@ -37,7 +37,7 @@ console.log(nombre)
 let ultimoElemento = nombres.pop()
 
 console.log(ultimoElemento)
-
+*/
 
 //.shift: elimina el primer elemento y lo retorna
 
@@ -74,7 +74,7 @@ console.log('la posicion de ezequiel es' + posicionDeEzequiel)
 nombres2.splice(posicionDeEzequiel,1)
 console.log(nombres2)
 */
-
+/*
 const nombres3 = ['maria','pedro','leonel','ezequiel','elias','lucas'
     ,'julieta','abril','lautaro']
 console.log(nombres3)
@@ -99,25 +99,22 @@ console.log(nombres3)
 let abrilPosition = nombres3.indexOf('abril')
 nombres3.splice(abrilPosition,0 , 'sofia')
 console.log(nombres3)
+*/
 
+/*
+
+const nombres3 = [ 'maria' , 'pedro' , 'leonel' , 'ezequiel' , 'elias' , 'lucas'
+    , 'julieta' , 'abril' , 'lautaro']
 
 // Consultar si esta en la lista
-
 console.log(nombres3.includes('leonel'))
-
-
-
 
 for(let index = 0; index < nombres3.length; index = index + 1){
     console.log(nombres3[index])
 }
-
-/*
-const nombres3 = [ 'maria' , 'pedro' , 'leonel' , 'ezequiel' , 'elias' , 'lucas'
-    , 'julieta' , 'abril' , 'lautaro']
 */
 
-    // string.length => obtener la cantidad de caracteres
+// string.length => obtener la cantidad de caracteres
 
 /*
 Obtener cantidad total de caracteres de una lista de nombres:
@@ -146,39 +143,42 @@ console.log( 'la cantidad de caracteres es: ' +  caracteres )
 for(let nombre of nombres3){
     console.log(nombre)
 }
+
 */
 
 
-
-// Dado el siguiente array crear un segundo array llamado mayusculas que solo contenga alguna palabra con alguna letra mayuscula 
-
+// Dado el siguiente array crear un segundo array llamado mayusculas que solo contenga alguna palabra con alguna letra mayuscula .
 
 /*
-
 const nombres =['pepe', 'lucas', 'PEDRO', 'JuaN']
+
+// Verificar si esta en minuscula
+
+let nombre = 'pepe'
+
+const estaEnMinuscula = (string) => string == string.toLowerCase()
+
+console.log(estaEnMinuscula(nombre))
+
 
 //esto debe generar un segundo array con ['PEDRO', 'JuaN']
 
-const estaEnMinuscula = (string) => {
-    return string == string.toLowerCase()
-} 
-
-const tieneMayuscula = (string) => {
-    return !estaEnMinuscula(string)
-}
+const estaEnMinuscula = (string) => string == string.toLowerCase()
 
 
-const mayusculas =[];
+const tieneMayuscula = (string) => !estaEnMinuscula(string)
+
+
+const mayusculas =[]
 for (let nombre of nombres){
     if (tieneMayuscula(nombre)){
-        mayusculas.push(nombre);
+        mayusculas.push(nombre)
     }
 }
 
-console.log(mayusculas);
+console.log(mayusculas)
 
 */
-
 
 /*
 const productos = [
@@ -218,9 +218,9 @@ const productos = [
         marca: 'samsung'
     },
 ]
-*/
 
-/*
+
+
 // crear un array llamado samsung que contenga los productos que sean de la marca samsung 
 
 
@@ -231,15 +231,20 @@ for(const producto of productos){
     }
 }
 console.log(samsung)
+
 */
 
+// Crear una funcion que se llame buscarProducto(string) recibira un string
+// y cada producto del array de productos 
+// verificara si el titulo tiene incluido el string buscado. 
+// Esta funcion debe retornar un array de productos
 
-//Crear una funcion que se llame buscarProducto(string) recibira un string y cada producto del array de productos verificara si el titulo tiene incluido el string buscado Esta funcion debe retornar un array de productos
 /*
+
 EJEMPLO:
 buscarProducto('noblex') 
 */
-/*
+
 const productos = [
     {
         title: 'tv samsung 32"',
@@ -289,6 +294,10 @@ function buscarProducto (busqueda){
 }
 
 
+
 let stringBuscado = prompt('ingrese el producto que desea buscar')
-console.log(buscarProducto ('stringBuscado'))
-*/
+
+console.log(buscarProducto (stringBuscado))
+
+
+
