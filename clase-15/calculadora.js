@@ -23,8 +23,8 @@ login() // retorna el usuario {
     email: 'value@gmail.com',
     password: 'Pepe123'
 }
-    */
-/*
+*/
+
 const tieneMayuscula = (palabra) => palabra.toLowerCase() !== palabra
 
 const validacionEmail = (email) => {
@@ -62,7 +62,7 @@ const login = () => {
 
 
 console.log(login())
-*/
+
 
 /*
 
@@ -215,7 +215,7 @@ guardarEnElHistorial({
 */
 
 
-
+/*
 
 guardarEnHistorial ({
     accion: 'calculadora',
@@ -263,7 +263,7 @@ const renderizarHistorial = () =>{
 
 alert(renderizarHistorial())
 
-
+*/
 
 
 
