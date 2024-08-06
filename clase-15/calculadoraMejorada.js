@@ -17,6 +17,7 @@ const solicitarDato = (mensaje, error, validacion) => {
 }
 
 
+
 const login = () => {
     const usuario = {
         email: null,
@@ -38,7 +39,7 @@ const login = () => {
     return usuario
 }
 
-
+console.log(login())
 
 
 
