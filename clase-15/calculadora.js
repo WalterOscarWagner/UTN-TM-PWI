@@ -134,14 +134,14 @@ const calculadora = () =>{
 
 
 
-/*
+
 
 localStorage.setItem( 
     'usuario',
     JSON.stringify(login())
 )
 
-*/
+
 
 
 //Vamos a crear una funcion llamada obtener historial que nos devuelva el array historial

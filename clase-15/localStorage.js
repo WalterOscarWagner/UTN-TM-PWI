@@ -1,10 +1,10 @@
 // localStorage y sessionStorage
 
-/*
+
 let nombre = prompt ('Ingrese un nombre')
 
 localStorage.setItem('username', nombre)
-*/
+
 
 /*
 console.log(String({nombre: 'pepe'}))
@@ -31,7 +31,7 @@ console.log(JSON.parse('{"nombre": "pepe"}'))
 */
 
 
-
+/*
 
 const login = () => {
     const usuario = {
@@ -56,7 +56,7 @@ const login = () => {
     return usuario
 }
 
-
+*/
 //Mejorar la funcion login para que el objeto retornado lo guarde en localStorage
 
 /*
@@ -69,13 +69,13 @@ localStorage.setItem('usuario', usuarioRegistrado)
 console.log(JSON.parse(localStorage.getItem('usuario')))
 */
 
-
+/*
 
 localStorage.setItem( 
     'usuario',
     JSON.stringify(login())
 )
-
+*/
 
 
 
